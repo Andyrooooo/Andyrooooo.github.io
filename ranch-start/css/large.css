@@ -1,15 +1,16 @@
 @media only screen and (min-width: 1028px) {
 
-main, nav {max-width: 75rem; margin: auto;}
-header h1 {max-width: 75rem; margin: auto;}
-header h2 {max-width: 75rem; margin: auto;}
+main, header, footer, nav {max-width: 75rem; margin: auto;}
+/*header h1 {max-width: 75rem; margin: auto;}
+header h2 {max-width: 75rem; margin: auto;}*/
+
 
 nav ul {padding-left: 2%;}
 nav ul li {flex-basis: auto;}
 nav a {padding: .5rem 1rem;}
 
 
-main figure {width: 50%;}
+main figure {width: 31%;}
 
 div.news {column-count: 3;}
 
