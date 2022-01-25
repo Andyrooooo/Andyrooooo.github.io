@@ -8,7 +8,7 @@ body {
 
 /* header rules here */
 header {
-    background-color: #E81D02;
+    background-color: $primaryColor;
     padding: 1rem 2%;
 }
 header h1 {
@@ -38,7 +38,7 @@ main {
     padding: 1rem 2%;
     display: block;
 }
-main h1 {color: #E81D02;}
+main h1 {color: $primaryColor;}
 
 main figure img {width: 100%;}
 main figure{
@@ -50,5 +50,5 @@ main figcaption {text-align: center; font-size: .8rem;}
 footer {
     text-align: center;
     padding: 1rem 2%;
-    background-color: #E81D02;
+    background-color: $primaryColor;
 }
