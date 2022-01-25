@@ -2,20 +2,23 @@
 
 /* body rules here */
 body {
-    font-family: verdana;
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
     font-size: 16px;
 }
 
 /* header rules here */
 header {
     background-color: $primaryColor;
-    padding: 1rem 2%;
+    padding: 1rem $gutter;
 }
 header h1 {
     margin: 0;
+    font-weight: $heavyWeight;
 }
 header h2 {
     margin: 0;
+    font-weight: $regularWeight;
 }
 
 /* navigation rules right hur */
@@ -35,10 +38,11 @@ nav a:hover {background-color: #444;}
 
 /* main tag rules right hur */
 main {
-    padding: 1rem 2%;
+    padding: 1rem $gutter;
     display: block;
 }
-main h1 {color: $primaryColor;}
+main h1 {color: $primaryColor;
+font-weight: $heavyWeight;}
 
 main figure img {width: 100%;}
 main figure{
@@ -49,6 +53,6 @@ main figcaption {text-align: center; font-size: .8rem;}
 
 footer {
     text-align: center;
-    padding: 1rem 2%;
+    padding: 1rem $gutter;
     background-color: $primaryColor;
 }
