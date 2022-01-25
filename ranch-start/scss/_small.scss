@@ -11,15 +11,16 @@ body {
 header {
     background-color: $primaryColor;
     padding: 1rem $gutter;
-}
-header h1 {
-    margin: 0;
-    font-weight: $heavyWeight;
-}
-header h2 {
-    margin: 0;
-    font-weight: $regularWeight;
-}
+    h1 {
+        margin: 0;
+        font-weight: $heavyWeight;
+    } // end of h1
+    h2 {
+        margin: 0;
+        font-weight: $regularWeight;
+    } // end of h2
+} //end of header
+ 
 
 /* navigation rules right hur */
 nav {background-color: #111;}
