@@ -446,8 +446,11 @@ body {
 }
 
 /* header rules here */
-header {
+div#headerWrapper {
   background-color: #E81D02;
+}
+
+header {
   padding: 1rem 2%;
 }
 header h1 {
@@ -460,9 +463,10 @@ header h2 {
 }
 
 /* navigation rules right hur */
-nav {
+div#navWrapper {
   background-color: #111;
 }
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -487,12 +491,13 @@ nav a:hover {
 
 /* main tag rules right hur */
 main {
-  padding: 1rem 2%;
+  padding: 0 2% 1rem 2%;
   display: block;
 }
 main h1 {
   color: #E81D02;
   font-weight: 700;
+  margin-top: 0;
 }
 main figure img {
   width: 100%;
@@ -506,10 +511,13 @@ main figcaption {
   font-size: .8rem;
 }
 
+div#footerWrapper {
+  background-color: #E81D02;
+}
+
 footer {
   text-align: center;
   padding: 1rem 2%;
-  background-color: #E81D02;
 }
 
 @media only screen and (min-width: 560px) {
