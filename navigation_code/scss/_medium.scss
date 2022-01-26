@@ -1,0 +1,10 @@
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    ul {
+        display: flex;
+        justify-content: space-between; /*this is where the content was moved to the right for large and medium screens*/
+    } //end of ul 
+    ul li a {
+        border: none;
+    } // end of ul li anchor
+} // end of nav
