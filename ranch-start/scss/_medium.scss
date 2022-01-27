@@ -1,19 +1,37 @@
-
+header {
+    padding: .5rem $gutter .8rem $gutter; //right here is where the padding will change the size of the header
+    img {float: left; padding-right: 15px;}
+    h1 {
+        margin: 1rem 0 0 0; padding-bottom: .5rem; // this is where the padding will change the header as well
+        font-weight: $heavyWeight;
+    } // end of h1
+    h2 {
+        visibility: visible;
+        margin: 0;
+        font-weight: $regularWeight;
+        font-size: 1.4rem;
+    } // end of h2
+} //end of header
 
 
 nav ul {display: flex;}
 nav ul li {flex-basis: 25%;}
+nav ul li.shopping {border-right: #666 1px solid;}
+nav ul li.locations {border-right: #666 1px solid;}
+nav ul li.active {border-right: #666 1px solid;}
+nav ul li a {text-align: center;}
+
 
 main figure {
     float: right;
     width: 48%;
-    margin-left: 2%;
     padding-bottom: .5rem;
 }
-
-div.news {
+main img {padding: 0;}
+/* main h1 {font-size: 1.6rem;} may just be issues with the wireframe so we'll keep this here  margin: 1rem 0 .5rem 0;*/
+/* div.news {
     clear: both;
-    column-count: 2;
-    column-rule: 1px solid #ddd;
-}
+    column-count: 2; 
+    column-rule: 1px solid #ddd; 
+}  <<<<<< This part was taken out */
 

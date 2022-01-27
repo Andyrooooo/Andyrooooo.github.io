@@ -10,20 +10,24 @@ body {
 /* header rules here */
 div#headerWrapper {background-color: $primaryColor;}
 header {
-    padding: 1rem $gutter;
+    padding: .4rem $gutter 0 $gutter; /*right here is where the padding will change the size of the header*/
+    img {float: left; padding-right: 15px;}
     h1 {
-        margin: 0;
+        margin: 3.5rem 0 0 0; /* this is where the padding will change the header as well */
         font-weight: $heavyWeight;
     } // end of h1
     h2 {
+        visibility: hidden;
         margin: 0;
+        padding: 0;
         font-weight: $regularWeight;
-    } // end of h2
-} //end of header
+        font-size: 5px;
+    } /*end of h2*/
+} /* end of header */
  
 
 /* navigation rules right hur */
-div#navWrapper {background-color: #111}
+div#navWrapper {background-color: #111} 
 nav {
      ul {margin: 0; padding: 0;}
      li {list-style-type: none;}
@@ -31,21 +35,21 @@ nav {
 
      a {
     display: block;
-    padding: .8rem 0; /* 44 min height */
+    padding: .8rem $gutter; /* 44 min height */
     color: #eee;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    } // end of the anchor for text
+    } /* end of the anchor for text */
     a:hover {background-color: #444;}
-} //end of nav
+} /*end of nav*/
 
 /* main tag rules right hur */
-main {padding: 0 $gutter 1rem $gutter; display: block;
-     h1 {color: $primaryColor; font-weight: $heavyWeight; margin-top: 0;} // The main and h1 may need to be adjusted once we add the picture
-     figure img {width: 100%;}
-     figure{width: 100%; margin: 0;}
-     figcaption {text-align: center; font-size: .8rem;}
-} // end of main specifications
+main {padding: 0; display: block;
+     h1 {color: $primaryColor; font-weight: $heavyWeight; padding-left: 2%; margin-bottom: .5rem;} /* The main and h1 may need to be adjusted once we add the picture*/
+     img {width: 100%;} /*This may just be another error in the wireframe  padding-top: 10px;*/
+     figure{width: 100%; margin: 0; padding: 0 $gutter;}
+     p {padding: 0 $gutter; margin-top: 0;}
+} /* end of main specifications*/
 
 div#footerWrapper {background-color: $primaryColor;}
 footer {

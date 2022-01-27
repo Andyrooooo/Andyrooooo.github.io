@@ -3,13 +3,13 @@ main, header, footer, nav {max-width: 75rem; margin: auto;}
 header h2 {max-width: 75rem; margin: auto;}*/
 
 
-nav ul {padding-left: $gutter;}
+nav ul {padding-left: $gutter; justify-content: center;}
 nav ul li {flex-basis: auto;}
-nav a {padding: .5rem 1rem;}
+nav a {padding: .6rem 2rem; text-align: center;}
 
 
 main figure {width: 31%;}
 
-div.news {column-count: 3;}
+/*div.news {column-count: 3;} where the columns are taken out*/
 
 
