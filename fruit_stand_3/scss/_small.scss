@@ -8,23 +8,29 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
     display: grid;
     grid-template-columns: 110px auto;
 }
-header h1 {margin: 0; font-size: 1.2rem; margin-top: .5rem;}
-header h2 {margin: 0; font-weight: normal;}
+header h1 {
+    margin: 0; 
+    font-size: 3rem; 
+    margin-top: 1.8rem; 
+    font-weight: $thickslantweight;}
+header h2 {
+    margin: 0; 
+    font-weight: normal; 
+    font-size: 1rem;}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+    background-color: $menuColor;
 }
 nav ul {
     list-style-type: none;
@@ -32,39 +38,71 @@ nav ul {
     margin: 0;
 }
 nav ul li {
-    float: left;
-    width: 25%;
+ 
+    width: 100%;
 }
 nav ul li a {
     display: block;
-    background-color: #444;
+    background-color: darken($menuColor, 10%);
     color: #eee;
-    border-left: 1px solid #777;
-    padding: .5rem 0;
+    /* border-left: 1px solid #777;  might not need */
+    padding: .5rem 2%;
     text-decoration: none;
     font-size: .9rem;
-    text-align: center;
+    text-align: right;
 }
 nav ul li:first-child a {border-left: none;}
 
 nav ul li a:hover {
-    background-color: #eee;
+    background-color: lighten($menuColor, 5%);
     color: #333;
 }
 nav ul li.active a {
-    background-color: #000;
+    background-color: darken($menuColor, 30%);
     color: #fff;
 }
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
+    padding: 0; /*This is where the rest of the gap between the window and the images is coming from*/
     min-height: 10rem;
 }
+main h1 { padding-left: 2%;}
+main h1 {margin-bottom: 0;}
+main div figure {
+    text-align: center;
+}
 
-
+div.fruit_gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.fruit_gallery figure{
+    flex-basis: 47%; /*If we change the padding to margin down below here then we need to make the flex basis 98%*/
+    margin: 1rem 2%; /*Might need to change the padding from main to here and have it as margin: 1rem 2%*/
+}
+div.fruit_gallery figure img {
+    width: 100%
+}
+// this is the start of the figures to help reduce the space
+div figure.banana {
+    margin-left: 0; margin-top: 0;
+}
+div figure.kiwi {
+    margin-left: 0;
+}
+div figure.pear {
+    margin-left: 0;
+}
+div figure.strawberry {
+    margin-left: 0;
+}
+div figure.apple {
+    margin-top: 0;
+}
+// this is the end of the figures to help reduce the space
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    background-color: $menuColor;
     padding: .5rem 2%;
     text-align: center;
 }

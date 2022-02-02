@@ -1,7 +1,4 @@
-header, nav, main, footer {
-        max-width: 64rem;
-        margin:auto;
-}
+header, nav, main, footer { max-width: 71.25rem; margin:auto;}
 
 /*----------- BODY --------------*/
 
@@ -16,8 +13,32 @@ header, nav, main, footer {
 
 
 /*----------- MAIN --------------*/
+div.fruit_gallery figure {
+        flex-basis: 22.5%
+    }
 
-
-
+// this is the start of the figures to help reduce the space
+div figure.banana {
+        margin-left: 0;
+    }
+    div figure.kiwi {
+        margin-left: 0; margin-top: 0;
+    }
+    div figure.pear {
+        margin-left: 0;
+    }
+    div figure.strawberry {
+        margin-left: 0;
+    }
+    div figure.orange {
+        margin-left: 2%;
+    }
+    div figure.blueberry {
+        margin-left: 0;
+    }
+    div figure.pineapple {
+        margin-left: 0;
+    }
+    // this is the end of the figures to help reduce the space
 /*----------- FOOTER --------------*/
     

@@ -7,19 +7,46 @@
 
 /*----------- HEADER --------------*/
 
-
+header h1 {font-size: 1.6rem; margin-top: 3rem;}
+header h2 {font-size: 1.3rem;}
 
 /*----------- NAVIGATION --------------*/
-    nav ul {margin-left: 2%;}
+    nav ul {
+        margin-left: 2%; margin-right: 2%;
+        display: flex;
+        justify-content: flex-end;
+    }
     nav ul li {width: auto;}
-    nav ul li:first-child a {border-left: 1px solid #777;}
-    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li:first-child a {border-right: 1px solid #777;}
+    nav ul li.active { border-right: 1px solid #777;}
+    nav ul li:last-child a {border-left: 1px solid #777;}
     nav ul li a{padding: .5rem 1rem;}
 
 
 /*----------- MAIN --------------*/
-
-
+div.fruit_gallery figure {
+    flex-basis: 30.66%
+}
+// this is the start of the figures to help reduce the space
+div figure.banana {
+    margin-left: 0;
+}
+div figure.kiwi {
+    margin-left: 2%;
+}
+div figure.pear {
+    margin-left: 0;
+}
+div figure.strawberry {
+    margin-left: 0;
+}
+div figure.orange {
+    margin-left: 0;
+}
+div figure.blueberry {
+    margin-left: 0; margin-top: 0;
+}
+// this is the end of the figures to help reduce the space
 
 /*----------- FOOTER --------------*/
     
