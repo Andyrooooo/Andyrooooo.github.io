@@ -17,9 +17,9 @@ header h2 {font-size: 1.3rem;} */
         justify-content: flex-end;
     }
     nav ul li {width: auto;}
-    nav ul li:first-child a {border-right: 1px solid #777;}
-    nav ul li.active { border-right: 1px solid #777;}
-    nav ul li:last-child a {border-left: 1px solid #777;}
+    nav ul li:first-child a {border-right: 1px solid lighten($menuColor, 30%);}
+    nav ul li.active { border-right: 1px solid lighten($menuColor, 30%);}
+    nav ul li:last-child a {border-left: 1px solid lighten($menuColor, 30%);}
     nav ul li a{padding: .5rem 1rem;}
 
 
