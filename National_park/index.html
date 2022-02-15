@@ -23,33 +23,88 @@
 </head>
 <body>
 <!-- HEADER HERE -->
+<div id="headerWrapper">
 	<header>
- <h1>Company Name Here</h1>
-        <h2>Possible Slogan or Tagline</h2>
+ <h1>Yosemite National Park</h1>
+        <h2>Adventure of a Lifetime</h2>
     </header>
-    
+</div>
     
 <!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <ul >
-            <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Products</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Contact</a></li>    
+<div id="navWrapper">
+    <nav>
+            <button id="hamburgerMenu">&#9776;</button>
+        <ul id="primaryNav">
+            <li><a href="#">Visit</a></li>
+            <li><a href="#">Sites</a></li>
+            <li><a href="#">Donate</a></li>
+            <li class="active"><a href="#">Animals</a></li>    
         </ul>
     </nav>
-    
+</div>
     
 <!-- CONTENT HERE -->
+<div id="mainWrapper">
     <main>
-        <h1>Products</h1>
-        <p>The page name should almost exactly match the menu item. </p>
-    </main>
-    
-<!-- FOOTER HERE -->   
-    <footer>
-        &copy; 201x &bull; Paul Cheney &bull; 123-555-6789
-    </footer>
+        <h1>Animals</h1>
 
+    <div class="allCards"> <!-- Beginning of cards-->
+        <div class="card">
+            <h3>Bear</h3>
+            <img src="images/bear.svg" alt="Bear icon">
+            <p>Bears are large mammals that eat mostly 
+                meat and fish. Many bears also eat plants, 
+                bulbs, and insects.
+                The polar bear eats mostly meat and is 
+                classified as carnivores, while the panda feeds 
+                almost entirely on bamboo and is classified as 
+                a herbivore. The six other species of bear eat 
+                both plants and animals and are classified as 
+                omnivorous</p>
+                <a href="#">Learn more</a>
+        </div>
+
+        <div class="card">
+            <h3>Fish</h3>
+            <img src="images/fish.svg" alt="Fish icon">
+            <p>Fish are large mammals that eat mostly 
+                meat and fish. Many fish also eat plants, 
+                bulbs, and insects.
+                The polar fish eats mostly meat and is 
+                classified as carnivores, while the panda fish feeds 
+                almost entirely on bamboo and is classified as 
+                a herbivore. The six other species of fish eat 
+                both plants and animals and are classified as 
+                omnivorous</p>
+                <a href="#">Learn more</a>
+        </div>
+
+        <div class="card">
+            <h3>Bird</h3>
+            <img src="images/bird.svg" alt="Bird icon">
+            <p>Birds are large mammals that eat mostly 
+                meat and fish. Many birds also eat plants, 
+                bulbs, and insects.
+                The polar bird eats mostly meat and is 
+                classified as carnivores, while the panda bird feeds 
+                almost entirely on bamboo and is classified as 
+                a herbivore. The six other species of bird eat 
+                both plants and animals and are classified as 
+                omnivorous</p>
+                <a href="#">Learn more</a>
+        </div>
+    </div> <!--End of cards-->
+
+        <!--<div class="test">Help</div>  This is part of the keyframe that allows the animation -->
+    </main>
+</div>    
+
+<!-- FOOTER HERE -->  
+<div id="footerWrapper"> 
+    <footer>
+        &copy; 2022 &bull; Andrew Kester &bull; 123-555-6789
+    </footer>
+</div>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

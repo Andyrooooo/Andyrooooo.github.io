@@ -6,19 +6,23 @@
 
 
 /*----------- HEADER --------------*/
-
+div#headerWrapper {
+    background-image: url(../images/Header-assets/header-medium.jpg); 
+    height: 240px;} /* This sets the height for the image*/
 
 
 /*----------- NAVIGATION --------------*/
-    nav ul {margin-left: 2%;}
+    nav button {padding-left: 2%;}
     nav ul li {width: auto;}
-    nav ul li:first-child a {border-left: 1px solid #777;}
-    nav ul li:last-child a {border-right: 1px solid #777;}
-    nav ul li a{padding: .5rem 1rem;}
+    nav ul li a{padding: .5rem 1rem .5rem 2%;}
+
+  
+    
 
 
 /*----------- MAIN --------------*/
 
+main div.card {flex-basis: 46%;}
 
 
 /*----------- FOOTER --------------*/
