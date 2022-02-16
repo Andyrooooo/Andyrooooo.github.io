@@ -317,7 +317,8 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: Verdana, sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Serif', sans-serif; }
 
 /*----------- HEADER --------------*/
 div#headerWrapper {
@@ -326,25 +327,31 @@ div#headerWrapper {
 
 /* This sets the height for the image*/
 header {
-  padding: .5rem 2%; }
+  padding: .5rem 2%;
+  background-color: rgba(0, 0, 0, 0.05); }
 
 header h1 {
-  margin: 0; }
+  margin: 0;
+  padding-top: 4rem;
+  font-weight: 700;
+  color: white; }
 
 header h2 {
   margin: 0;
-  font-weight: normal; }
+  font-weight: normal;
+  font-weight: 500;
+  color: white; }
 
 /*----------- NAVIGATION --------------*/
 div#navWrapper {
-  background-color: #444; }
+  background-color: #70A962; }
 
 nav button {
   background: transparent;
   border: none;
   font-size: 1.5rem;
-  color: white, 0.9;
-  padding-left: 2%; }
+  color: black;
+  padding: .4rem 0 .2rem 2%; }
 
 nav ul {
   list-style-type: none;
@@ -355,34 +362,28 @@ nav ul {
 nav ul.open {
   display: block; }
 
-/*nav ul li {
-    float: left;
-    width: 25%;
-} */
-/* nav.allnav {display: flex; justify-content: right;}  This was a mistake*/
 nav ul li a {
   display: block;
-  background-color: #444;
-  color: #eee;
+  background-color: #70A962;
+  color: black;
   padding: .5rem 0;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   text-decoration: none;
   font-size: .9rem;
   text-align: left;
-  padding-left: 2%; }
+  padding-left: 2%;
+  font-family: Roboto; }
 
-/* nav ul li:first-child a {border-left: none;} we may not need some of this */
 nav ul li a:hover {
-  background-color: #eee;
-  color: #333; }
+  background-color: #446b3a;
+  color: #fff; }
 
 nav ul li.active a {
-  background-color: #000;
+  background-color: #2f4a28;
   color: #fff; }
 
 /*----------- MAIN --------------*/
-/* div#mainWrapper {background-color: #696969;}  This extends the color all the way across the page*/
 main {
   padding: 0 0 1.5rem;
   min-height: 10rem; }
@@ -393,19 +394,36 @@ main {
     display: flex;
     flex-wrap: wrap; }
   main div.card {
-    border: 1px solid black;
     flex-basis: 98%;
-    text-align: center;
     border-radius: 10px;
-    margin: 1rem 2%;
-    background-color: #98ff98; }
-    main div.card h3 {
-      border-bottom: 1px solid grey;
-      padding: 5px; }
+    margin: 0 2% 1rem 2%;
+    background-color: #70A962; }
+  main div.card h3 {
+    border-bottom: 1px solid black;
+    padding: 15px 5px 8px 5px;
+    margin: 0;
+    font-size: 1.6rem;
+    text-align: center;
+    color: black; }
+  main div.card:hover h3 {
+    animation: changecolor 2s 1; }
+@keyframes changecolor {
+  0% {
+    color: blue; }
+  50% {
+    color: red; }
+  100% {
+    color: yellow; } }
   main div.card:hover img {
     animation: bounce 2s 1; }
   main img {
-    position: relative; }
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 48px;
+    height: 48px; }
 @keyframes bounce {
   0% {
     bottom: 0px;
@@ -434,27 +452,36 @@ main {
   100% {
     bottom: 0px; } }
   main p {
-    padding: 0 10px; }
+    padding: 0 10px;
+    font-family: Roboto;
+    font-weight: 400;
+    color: black;
+    margin-top: 16px; }
   main a {
     display: block;
-    background-color: white;
+    background-color: #accda4;
     color: black;
     border-radius: 6px;
     padding: 10px;
-    margin: 10px 10px;
-    text-decoration: none; }
+    margin: 1rem;
+    text-decoration: none;
+    font-family: Roboto;
+    text-align: center; }
   main a:hover {
-    background-color: grey; }
+    color: white;
+    background-color: #446b3a; }
 
 /* end of main*/
 /*----------- FOOTER --------------*/
 div#footerWrapper {
-  background-color: #ddd; }
+  background-color: #70A962; }
 
 /* This extends the color all the way across the page*/
 footer {
   padding: .5rem 2%;
-  text-align: center; }
+  text-align: center;
+  color: black;
+  font-family: Roboto; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -470,6 +497,9 @@ footer {
     height: 240px; }
 
   /* This sets the height for the image*/
+  header h1 {
+    padding-top: 10rem; }
+
   /*----------- NAVIGATION --------------*/
   nav button {
     padding-left: 2%; }
@@ -498,6 +528,8 @@ footer {
     height: 400px;
     background-size: cover;
     background-position: center top; }
+    div#headerWrapper header h1 {
+      padding-top: 20rem; }
 
   /* This sets the height for the image*/
   /*----------- NAVIGATION --------------*/
@@ -513,6 +545,15 @@ footer {
       padding: .8rem; }
     nav ul li a {
       border: none; }
+
+  nav ul li:first-child a {
+    border-right: 1px solid black; }
+
+  nav ul li:nth-child(2) a {
+    border-right: 1px solid black; }
+
+  nav ul li:nth-child(3) a {
+    border-right: 1px solid black; }
 
   /*----------- MAIN --------------*/
   main div.card {
