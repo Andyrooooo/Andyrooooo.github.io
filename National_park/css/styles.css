@@ -539,8 +539,9 @@ footer {
     height: 400px;
     background-size: cover;
     background-position: center top; }
-    div#headerWrapper header h1 {
-      padding-top: 20rem; }
+
+  header h1 {
+    padding-top: 20rem; }
 
   /* This sets the height for the image*/
   /*----------- NAVIGATION --------------*/

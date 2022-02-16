@@ -13,21 +13,22 @@ div#headerWrapper {
         height: 400px;
         background-size: cover;
         background-position: center top;
-header h1 {padding-top: 20rem;}
-} /* This sets the height for the image*/
+} 
+header h1 {padding-top: 20rem;}/* This sets the height for the image*/
 
 
 /*----------- NAVIGATION --------------*/
 nav {
+padding-right: 2%;
    button {display: none;}
-   padding-right: 2%;
+
    ul, ul.open {
         border: none;
         display: flex;
         justify-content: right;
    }
    ul li a {padding: .8rem;}
-   ul li a {border: none; }
+   ul li a {border: none;}
 }
 nav ul li:first-child a {border-top: none;}
 nav ul li:nth-child(2) a {border-top: none;}
