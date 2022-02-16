@@ -53,19 +53,22 @@ nav ul.open {
     display: block;
 }
 
+nav ul li:first-child a {border-top: 1px solid $blackColor;}
+nav ul li:nth-child(2) a {border-top: 1px solid $blackColor;}
+nav ul li:nth-child(3) a {border-top: 1px solid $blackColor;}
+nav ul li:nth-child(4) a {border-top: 1px solid $blackColor; border-bottom: 1px solid $blackColor;}
 nav ul li a {
     display: block;
     background-color: $backgroundColor;
     color: black;
     padding: .5rem 0;
-    border-top: 1px solid $blackColor;
-    border-bottom: 1px solid $blackColor;
     text-decoration: none;
     font-size: .9rem;
     text-align: left;
     padding-left: 2%;
     font-family: Roboto;
 }
+
 
 nav ul li a:hover {
     background-color: darken($backgroundColor, 20%);

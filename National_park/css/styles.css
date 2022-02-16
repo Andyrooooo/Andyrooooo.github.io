@@ -362,13 +362,24 @@ nav ul {
 nav ul.open {
   display: block; }
 
+nav ul li:first-child a {
+  border-top: 1px solid black; }
+
+nav ul li:nth-child(2) a {
+  border-top: 1px solid black; }
+
+nav ul li:nth-child(3) a {
+  border-top: 1px solid black; }
+
+nav ul li:nth-child(4) a {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+
 nav ul li a {
   display: block;
   background-color: #70A962;
   color: black;
   padding: .5rem 0;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   text-decoration: none;
   font-size: .9rem;
   text-align: left;
@@ -545,6 +556,19 @@ footer {
       padding: .8rem; }
     nav ul li a {
       border: none; }
+
+  nav ul li:first-child a {
+    border-top: none; }
+
+  nav ul li:nth-child(2) a {
+    border-top: none; }
+
+  nav ul li:nth-child(3) a {
+    border-top: none; }
+
+  nav ul li:nth-child(4) a {
+    border-top: none;
+    border-bottom: none; }
 
   nav ul li:first-child a {
     border-right: 1px solid black; }
