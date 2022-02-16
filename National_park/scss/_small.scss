@@ -95,7 +95,7 @@ main {
         background-color: $backgroundColor;
     }
 
-    div.card h3 {
+    div.card h2 {
         border-bottom: 1px solid $blackColor; 
         padding: 15px 5px 8px 5px;
         margin: 0;
@@ -104,7 +104,7 @@ main {
         color: $blackColor;
     }
 
-    div.card:hover h3 {animation: changecolor 2s 1;}
+    div.card:hover h2 {animation: changecolor 2s 1;}
     @keyframes changecolor {
         0% {color: blue;}
         50% {color: red;}

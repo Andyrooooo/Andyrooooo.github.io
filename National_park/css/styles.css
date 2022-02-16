@@ -409,14 +409,14 @@ main {
     border-radius: 10px;
     margin: 0 2% 1rem 2%;
     background-color: #70A962; }
-  main div.card h3 {
+  main div.card h2 {
     border-bottom: 1px solid black;
     padding: 15px 5px 8px 5px;
     margin: 0;
     font-size: 1.6rem;
     text-align: center;
     color: black; }
-  main div.card:hover h3 {
+  main div.card:hover h2 {
     animation: changecolor 2s 1; }
 @keyframes changecolor {
   0% {
