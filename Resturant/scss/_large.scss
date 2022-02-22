@@ -1,5 +1,5 @@
 header, nav, main, footer {
-        max-width: 60rem;
+        max-width: 75rem;
         margin:auto;
 }
 
@@ -9,12 +9,11 @@ header, nav, main, footer {
 
 /*----------- HEADER --------------*/
 
-header h1 {padding: 0;}
+
 
 
 /*----------- NAVIGATION --------------*/
 nav {
-padding-left: 2%;
    button {display: none;}
 
    ul, ul.open {

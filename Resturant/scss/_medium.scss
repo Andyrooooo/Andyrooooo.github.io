@@ -7,13 +7,14 @@
 
 /*----------- HEADER --------------*/
 
-header h1 {padding: 0;}
+header h1 {     
+    margin: 0; 
+    padding: 1rem 0 0 0;
+}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    padding-left: 2%;
        button {display: none;}
-    
        ul, ul.open {
             border: none;
             display: flex;

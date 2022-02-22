@@ -8,43 +8,51 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
+    font-family: 'Noto Serif', serif;
     font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Serif', sans-serif;
 }
 
 
 /*----------- HEADER --------------*/
-div#headerWrapper {
-    background-color: grey;}
+header.clearfix {padding: 0;}
 header {
     padding: .5rem 2%;
+    background-color: #FFFBE5;
 }
-header figure.test {
+header figure.logo {
     float: left;
-    margin: 0 2% 0 0;
+    margin: 1.5rem 2% 1rem 2%;
 }
 header h1 {
     margin: 0; 
-    padding: 0;
+    padding: 1rem 0 0 0;
     font-weight: $heavyWeight;
-    color: white;
+    font-family: Noto Serif;
+    color: $blackColor;
 }
 header h2 {
     margin: 0; 
-    font-weight: normal;
+    padding: 0 0 1rem 0;
     font-weight: $middleWeight;
-    color: white;
+    color: $blackColor;
+    font-size: 1.4rem;
+    font-family: Noto Serif;
 }
 
 /*----------- NAVIGATION --------------*/
- div#navWrapper {background-color: $backgroundColor;}  
-nav button {
+nav {background-color: $backgroundColor;}  
+    nav button {
     background: transparent;
     border: none;
     font-size: 1.5rem;
     color: $blackColor;
-    padding: .4rem 0 .2rem 2%;
-}
+    padding: .4rem 0 .2rem 4%;
+    }
+nav button span:nth-child(1) {display: block;}
+nav button span:nth-child(2) {display: none;}
+nav button.open span:nth-child(1) {display: none;}
+nav button.open span:nth-child(2) {display: block;}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -62,42 +70,64 @@ nav ul li:nth-child(4) a {border-top: 1px solid $blackColor; border-bottom: 1px 
 nav ul li a {
     display: block;
     background-color: $backgroundColor;
-    color: black;
+    color: $blackColor;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
     text-align: left;
     padding-left: 2%;
     font-family: Roboto;
+    font-weight: $bodyTitle;
 }
 
 
 nav ul li a:hover {
     background-color: darken($backgroundColor, 20%);
     color: #fff;
+    font-family: Roboto;
+    font-weight: $bodyTitle;
 }
 nav ul li.active a {
     background-color: darken($backgroundColor, 30%);
     color: #fff;
+    font-family: Roboto;
+    font-weight: $bodyTitle;
 }  
 
 /*----------- MAIN --------------*/
-
+main  picture.photoA {
+    display: block;
+    width: 100%; 
+}
+main picture.photoA img, main picture.photoB img {width: 100%;}
+main picture.photoB div {
+    text-align: center;
+    font-weight: $textWeight;
+    font-family: Roboto;
+}
+picture.photoB {
+    display: block;
+    float: right;
+    width: 46%;
+    margin: 0 2%;
+}
 main {
-    padding: 0 0 1.5rem;
+    padding: 0 0 1.5rem 0;
     min-height: 10rem;
-    h1 {margin: 0; padding: 1.5rem 0 1.5rem 2%;}
+    h2 {margin: 0; padding: 1.5rem 0 1.5rem 2%; font-weight: $bodyTitle;}
+    p {padding: 0; margin: 0 2%; font-family: Roboto; font-weight: $textWeight;}
 } /* end of main*/
 
 
 
 /*----------- FOOTER --------------*/
-div#footerWrapper {background-color: $backgroundColor;} /* This extends the color all the way across the page*/
 footer {
+    background-color: $backgroundColor;
     padding: .5rem 2%;
     text-align: center;
     color: $blackColor;
     font-family: Roboto;
+    font-weight: $bodyTitle;
 }
 
 

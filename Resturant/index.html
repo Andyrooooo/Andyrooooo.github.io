@@ -10,7 +10,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -29,8 +29,8 @@
 <!-- HEADER HERE -->
 <div id="headerWrapper">
 	<header class="clearfix">
-        <figure class="test">
-            <img src="images/test/test0.png" alt="logo" srcset="images/test/test1.png 1x, images/test/test2.png 2x, images/test/test3.png 3x">
+        <figure class="logo">
+            <img src="images/logo-assets/logo0.png" alt="logo" srcset="images/logo-assets/logo1.png 1x, images/logo-assets/logo2.png 2x, images/logo-assets/logo3.png 3x">
         </figure>
  <h1>Dairy Queen</h1>
         <h2>Happy Tastes Good</h2>
@@ -39,21 +39,38 @@
     
 <!-- NAVIGATION HERE -->
 <div id="navWrapper">
-    <nav>
-            <button id="hamburgerMenu">&#9776;</button>
-        <ul id="primaryNav">
+        <nav>
+            <button id="hamburgerMenu"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
             <li><a href="#">Menu</a></li>
             <li><a href="#">Locations</a></li>
             <li class="active"><a href="#">Our Founder</a></li>
             <li><a href="#">Contact</a></li>    
-        </ul>
-    </nav>
+            </ul>
+        </nav>
 </div>
     
 <!-- CONTENT HERE -->
-<div id="mainWrapper">
-    <main>
-        <h1>Animals</h1>
+<div>
+    <main class="clearfix">
+        <picture class="photoA">
+            <source media="(max-width: 450px)" srcset="images/heroimage/hero450.webp">
+            <source media="(max-width: 600px)" srcset="images/heroimage/hero600.webp">
+            <source media="(max-width: 750px)" srcset="images/heroimage/hero750.webp">
+            <source media="(max-width: 900px)" srcset="images/heroimage/hero900.webp">
+            <source media="(max-width: 1050px)" srcset="images/heroimage/hero1050.webp">
+            <img src="images/heroimage/herodefault.webp" alt="Dairy Queen Shakes">
+        </picture>
+        <h2>Our Founder</h2>
+        <picture class="photoB">
+            <source media="(max-width: 600px)" srcset="images/wendysbody/wendys300.webp">
+            <source media="(max-width: 900px)" srcset="images/wendysbody/wendys450.webp">
+            <source media="(max-width: 1200px)" srcset="images/wendysbody/wendys600.webp">
+            <img src="images/wendysbody/wendysdefault.webp" alt="Dave Thomas Serving">
+        </picture>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh sed pulvinar proin gravida. Volutpat blandit aliquam etiam erat velit. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Enim neque volutpat ac tincidunt vitae semper quis. Nisl condimentum id venenatis a condimentum vitae sapien. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Sed faucibus turpis in eu mi. Ut porttitor leo a diam sollicitudin tempor id. Vivamus arcu felis bibendum ut. Porttitor leo a diam sollicitudin. Mauris a diam maecenas sed enim ut sem viverra. Tellus cras adipiscing enim eu. Gravida arcu ac tortor dignissim convallis aenean et tortor at. In iaculis nunc sed augue lacus viverra vitae. Et magnis dis parturient montes nascetur ridiculus mus mauris. Urna nunc id cursus metus aliquam eleifend. Accumsan lacus vel facilisis volutpat. Magna sit amet purus gravida quis blandit turpis cursus in. Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh sed pulvinar proin gravida. Volutpat blandit aliquam etiam erat velit. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Enim neque volutpat ac tincidunt vitae semper quis. Nisl condimentum id venenatis a condimentum vitae sapien. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Sed faucibus turpis in eu mi. Ut porttitor leo a diam sollicitudin tempor id. Vivamus arcu felis bibendum ut. Porttitor leo a diam sollicitudin. Mauris a diam maecenas sed enim ut sem viverra. Tellus cras adipiscing enim eu. Gravida arcu ac tortor dignissim convallis aenean et tortor at. In iaculis nunc sed augue lacus viverra vitae. Et magnis dis parturient montes nascetur ridiculus mus mauris. Urna nunc id cursus metus aliquam eleifend. Accumsan lacus vel facilisis volutpat. Magna sit amet purus gravida quis blandit turpis cursus in.
+        </p>
     </main>
 </div>    
 
