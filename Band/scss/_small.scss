@@ -1,0 +1,177 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header.clearfix {padding: 0;}
+header {
+    background-color: $backgroundColor;
+    display: grid;
+    grid-template-columns: 130px auto;
+}
+header figure.logo {
+    margin: 1rem 0 .7rem 1rem;
+}
+header h1 {
+    margin: 0; 
+    padding: 2.8rem 0 0 0;
+    font-weight: $heavyWeight;
+    font-family: Noto Serif;
+    color: $blackColor;
+}
+/* header h2 {
+    margin: 0; 
+    padding: 0 0 .5rem 0;
+    font-weight: $middleWeight;
+    color: $blackColor;
+    font-size: 1.4rem;
+    font-family: Noto Serif;
+}       WE DONT KNOW IF WE STILL NEED THIS*/
+
+/*----------- NAVIGATION --------------*/
+nav {background-color: $backgroundColor;}  
+    nav button {
+    background: transparent;
+    border: none;
+    font-size: 2.65rem;
+    font-weight: 800;
+    color: $blackColor;
+    position: absolute;
+    top: 2.6rem;
+    right: .4rem;
+    }
+nav button span:nth-child(1) {display: block;}
+nav button span:nth-child(2) {display: none;}
+nav button.open span:nth-child(1) {display: none;}
+nav button.open span:nth-child(2) {display: block;}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 8.15rem;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+nav ul.open {
+    display: block;
+}
+
+/* nav ul li:first-child a {border-top: 1px solid $blackColor;}
+nav ul li:nth-child(2) a {border-top: 1px solid $blackColor;}
+nav ul li:nth-child(3) a {border-top: 1px solid $blackColor;}
+nav ul li:nth-child(4) a {border-top: 1px solid $blackColor; border-bottom: 1px solid $blackColor;}  DONT NEED*/
+nav ul li a {
+    display: block;
+    background-color: #D2D2D2;
+    color: $blackColor;
+    padding: 10px 1rem;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: $bodyTitle;
+}
+
+
+nav ul li a:hover {
+    background-color: darken($backgroundColor, 20%);
+    color: #fff;
+    font-family: Roboto;
+    font-weight: $bodyTitle;
+}
+nav ul li.active a {
+    background-color: darken($backgroundColor, 35%);
+    color: #fff;
+    font-family: Roboto;
+    font-weight: $bodyTitle;
+}  
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2% 1.5rem 2%;
+    min-height: 10rem;
+    h1 {margin: 0; padding: 1rem 0 1rem 0; font-weight: $bodyTitle;}
+} 
+main div.bandbio {
+    display: flex;
+    flex-wrap: wrap;
+}
+main div.bandbio div {flex-basis: 100%;}
+
+main div figure.circle { padding: 0; margin: 0;}
+main div figure.circle img {
+    float: left;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    shape-outside: polygon(100% 0, 0 0, 0 100%);;
+}
+main div figure.triangle { padding: 0; margin: 0;}
+main div figure.triangle img {
+    float: right;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    shape-outside: polygon(100% 0, 0 0, 100% 100%);
+}
+main div figure.leftpoint { padding: 0; margin: 0;}
+main div figure.leftpoint img {
+    float: left;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    shape-outside: polygon(100% 0, 0 0, 0 100%);
+}
+main div figure.halfcircle { padding: 0; margin: 0;}
+main div figure.halfcircle img {
+    float: right;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    shape-outside: polygon(100% 0, 0 0, 100% 100%);
+}
+/* Start of the image gallery*/
+section.imagegallery figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 55%;
+    position: relative;
+    margin: 0;
+}
+section.imagegallery figure img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+/* end of main*/
+
+main h2 {
+    padding: 1.5rem 0 .5rem 0;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: $backgroundColor;
+    padding: .5rem 2%;
+    text-align: center;
+    color: $blackColor;
+    font-family: Roboto;
+    font-weight: $bodyTitle;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
