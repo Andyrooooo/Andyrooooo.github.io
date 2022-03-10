@@ -1,0 +1,31 @@
+header, nav, main, footer {
+        max-width: 75rem;
+        margin: auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav ul li a {
+        padding: .3rem 1rem;
+        border-radius: 5px;
+        margin: .5rem 5px;
+}
+
+/*----------- MAIN --------------*/
+/*--------columns----------*/
+@for $i from 1 through 12 {
+        $w:($i / 12) * 100%;
+        .large-#{$i} {flex-basis: $w;}
+}
+main div.small-1 {
+        display: none;
+    }
+/*----------- FOOTER --------------*/
+    

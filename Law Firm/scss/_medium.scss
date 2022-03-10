@@ -1,0 +1,75 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+header {
+    grid-template-columns: 51px auto auto;
+}
+header div#phone {
+    display: block;
+    justify-self: end;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+header div#phone a {
+    color: #000000;
+    text-decoration: none;
+}
+header div#phone a:hover {
+    color: darken($navColor, 20%);
+}
+/*----------- NAVIGATION --------------*/
+div#hamburger, div#closex {display: none;}
+nav {
+    height: auto;
+}
+nav ul {
+    display: flex;
+    justify-content: end;
+    border: none;
+    margin: 0;
+    padding-right: 2vw;
+}
+nav ul li {border: none;}
+nav ul li a {
+    padding: .3rem 1rem;
+    border-radius: 5px;
+    margin: .5rem 5px;
+}
+/*----------- structure --------------*/
+div#headerwrapper {grid-row-start: 1;}
+div#navwrapper2 {grid-row-start: 2;}
+div#mainwrapper {grid-row-start: 3;}
+div#footerwrapper {grid-row-start: 4;}
+div#navwrapper1 {display: none;}
+
+/*----------- MAIN --------------*/
+
+/*--------columns----------*/
+@for $i from 1 through 12 {
+    $w:($i / 12) * 100%;
+    .medium-#{$i} {flex-basis: $w;}
+}
+main div.ctabutton1 {
+    display: none;
+}
+.column {padding: 0 $gutter;}
+main div.ctabutton2 {
+    text-align: center;
+    display: block;
+    margin-bottom: 2rem;
+}
+main div.ctabutton2 p {
+    color: white;
+    margin: 0;
+    padding: 1rem 0;
+    background-color: darken($navColor, 40%);
+}
+
+/*----------- FOOTER --------------*/
+    

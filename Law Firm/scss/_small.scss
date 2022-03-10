@@ -1,0 +1,334 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+div#headerwrapper {
+    background-color: $outsideColor; 
+    border-top: 5px solid #000;
+}
+
+div#headerwrapper {grid-row-start: 1;}
+
+header {
+    display: grid;
+    grid-template-columns: 51px auto;
+    align-items: center;
+    padding: .5rem 2vw;
+    div#phone {display: none;}
+}
+header h1 {padding-left: 1rem; font-family: Noto Serif;}
+
+
+/*----------- NAVIGATION --------------*/
+div#navwrapper1 {grid-row-start: 2;}
+
+div#navwrapper1 {
+    background-color: $navColor;
+    padding-right: 2vw;
+}
+
+
+div#navwrapper2 {grid-row-start: 5;}
+
+div#hamburger a, div#closex a {
+display: block;
+padding: .8rem 2vw;
+font-size: 3rem;
+color: rgb(0, 0, 0);
+text-align: right;
+text-decoration: none;
+}
+
+nav {height: 100vh; background-color: $navColor;}
+nav ul {border-bottom: 1px solid #eee; padding-left: 0;}
+nav ul li {border-top: 1px solid #eee; list-style-type: none;}
+nav ul li a {
+        display: block;
+        color: black;
+        padding: .9rem 2vw;
+        text-align: right;
+        text-decoration: none;
+}
+nav ul li a:hover {background-color: darken($navColor, 20%); color: black; }
+nav ul li.active a {background-color: darken($navColor, 40%); color: white;}
+/*----------- MAIN --------------*/
+div#mainwrapper {grid-row-start: 3;}
+/*--------columns----------*/
+main div.flexed {display: flex; flex-wrap: wrap;}
+
+.column {padding: 0 $gutter;}
+@for $i from 1 through 12 {
+    $w:($i / 12) * 100%;
+    .small-#{$i} {flex-basis: $w;}
+}
+/* lawyer cards*/
+main div.lawyer {margin: 1rem 0 1.5rem 0;}
+main div.lawyerstuff {
+    background-color: $navColor;
+    text-align: center;
+    padding-bottom: 6px;
+}
+main div.lawyer h3 {
+    margin: 0;
+    padding: 10px 0;
+    color: black;
+    font-weight: 500;
+}
+main div.lawyerstuff img {
+    width: 100%;
+}
+main div.lawyer a {
+    display: block;
+    background-color: darken($navColor, 40%); color: white;
+    padding: 8px 0;
+    border-radius: 5px;
+    font-size: .8rem;
+    margin: 15px 15px;
+    text-decoration: none;
+    color: white;
+}
+main div.lawyer a:hover {
+    background-color: darken($navColor, 20%);
+}
+/*
+main div.lawyer { 
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+}
+main div.lawyer h3 {
+    margin: 0;
+    padding: 10px 0;
+    background-color:rgb(187, 187, 187);
+}
+main div.lawyer p {
+    background-color: rgb(187, 187, 187);
+    margin: 0;
+    padding: 10px 0 15px 0;
+}
+main div.lawyer a {
+    display: block;
+    background-color: rgb(187, 0, 0);
+    padding: 5px 0;
+    border-radius: 5px;
+    font-size: .8rem;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+main div.lawyer img {
+    width: 100%;
+}*/
+/* call to action secion */
+main div.ctabutton1 p {
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    background-color: darken($navColor, 40%);
+    padding: 20px 0;
+}
+main div.ctabutton2 {
+    display: none;
+}
+
+/* blog posts*/
+main div.blogstuff {
+    background-color: $navColor; 
+    padding-bottom: 0; margin-bottom: 2rem;
+}
+main div.blog img{
+    width: 100%;
+}
+main div.blogstuff h2 {
+    margin: 2px 1vw 6px 1vw;
+    color: black;
+    font-weight: 500;
+}
+main div.blogstuff p {
+    margin: 0 1vw 6px 1vw;
+    color: black;
+}
+main div.blogstuff a {
+    display: block;
+    margin: 6px 0 0 0;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    background-color: lighten($navColor, 10%);
+    text-decoration: none;
+    color: black;
+}
+main div.blogstuff a:hover {
+    background-color: darken($navColor, 20%);
+    color: white;
+}
+/*tip of the day stuff 1*/
+main div.tipstuff1 {
+    background-color: $navColor; 
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+    padding-top: 4px;
+}
+main div.tipstuff1 h2 {
+    margin: 0 1vw 6px 1vw;
+    color: black;
+    font-weight: 500;
+}
+main div.tipstuff1 p {
+    margin: 0 1vw 6px 1vw;
+    color: black;
+}
+main div.tipstuff1 a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 10px 1vw 0 1vw;
+    padding: 8px 0 10px 0;
+}
+main div.tipstuff1 a:hover {
+    color: white;
+}
+/*tip of the day stuff 2*/
+main div.tipstuff2 {
+    background-color: $navColor; 
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+    padding-top: 4px;
+}
+main div.tipstuff2 h2 {
+    margin: 0 1vw 6px 1vw;
+    color: black;
+    font-weight: 500;
+}
+main div.tipstuff2 p {
+    margin: 0 1vw 6px 1vw;
+    color: black;
+}
+main div.tipstuff2 a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 10px 1vw 0 1vw;
+    padding: 8px 0 10px 0;
+}
+main div.tipstuff2 a:hover {
+    color: white;
+}
+/*tip of the day stuff 3*/
+main div.tipstuff3 {
+    background-color: $navColor; 
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+    padding-top: 4px;
+}
+main div.tipstuff3 h2 {
+    margin: 0 1vw 6px 1vw;
+    color: black;
+    font-weight: 500;
+}
+main div.tipstuff3 p {
+    margin: 0 1vw 6px 1vw;
+    color: black;
+}
+main div.tipstuff3 a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 10px 1vw 0 1vw;
+    padding: 8px 0 10px 0;
+}
+main div.tipstuff3 a:hover {
+    color: white;
+}
+/*tip of the day stuff 4*/
+main div.tipstuff4 {
+    background-color: $navColor; 
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+    padding-top: 4px;
+}
+main div.tipstuff4 h2 {
+    margin: 0 1vw 6px 1vw;
+    color: black;
+    font-weight: 500;
+}
+main div.tipstuff4 p {
+    margin: 0 1vw 6px 1vw;
+    color: black;
+}
+main div.tipstuff4 a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 10px 1vw 0 1vw;
+    padding: 8px 0 10px 0;
+}
+main div.tipstuff4 a:hover {
+    color: white;
+}
+/*
+main div.blog h2 {
+    margin: 0;
+    padding: .3rem 1vw .5rem 1vw;
+    background-color:rgb(143, 143, 143);
+}
+main div.blog p {
+    background-color:rgb(143, 143, 143);
+    margin: 0;
+}
+main div.blog a {
+    text-decoration: none;
+    background-color:rgb(218, 218, 218);
+    color: black;
+    padding: 10px 20px;
+}*/
+/*
+main div.ctabutton2 {
+    background-color: rgb(92, 92, 92);
+    text-align: center;
+    color: white;
+}
+main div.ctabutton3 {
+    background-color: rgb(92, 92, 92);
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}*/
+
+/*div#headerWrapper {
+    background-image: url(../images/Header-assets/header-small.jpg); 
+    height: 140px;}  This sets the height for the image*/
+
+/*----------- FOOTER --------------*/
+div#footerwrapper {background-color: $outsideColor;}
+div#footerwrapper {grid-row-start: 4;}
+footer div.socialicons {
+    text-align: center;
+    padding: 1rem 0;
+}
+footer div.socialicons a {
+    color: black;
+    font-size: 3rem;
+    text-decoration: none;
+    margin: 0 .2rem;
+}
+footer div.socialicons a:hover {
+    color: white;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
