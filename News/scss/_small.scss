@@ -95,6 +95,7 @@ main div.newsgrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    margin-bottom: 3rem;
 }
 main span {
     display: block;
@@ -115,7 +116,7 @@ footer div.footernav {
     grid-template-rows: auto;
     text-align: left;
     padding: .5rem 10vw;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 footer h1 {
