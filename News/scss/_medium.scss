@@ -1,0 +1,51 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+/*----------- NAVIGATION --------------*/
+nav button {display: none;}
+
+#primaryNav {display: flex;}
+
+nav ul {
+    margin-left: 2%;
+}
+nav ul li a {
+    font-size: 1.2rem;
+    padding: .8rem 1rem;
+}
+/*border for medium*/
+nav ul li:first-child {border-right: 1px solid $blackColor;}
+nav ul li:nth-child(2) {border-right: 1px solid $blackColor;}
+nav ul li:nth-child(3) {border-right: 1px solid $blackColor;}
+nav ul li:nth-child(4) {border-right: 1px solid $blackColor;}
+
+/*remove small border*/
+nav ul li:first-child {border-bottom: none; border-top: none;}
+nav ul li:nth-child(2) {border-bottom: none;}
+nav ul li:nth-child(3) {border-bottom: none;}
+  
+    
+
+
+/*----------- MAIN --------------*/
+
+main div.newsgrid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main span {
+    font-size: 1rem;
+} 
+
+.mainstory {grid-column: 1 / span 3;}
+/*----------- FOOTER --------------*/
+    
+footer div.footernav {
+    grid-template-columns: 1fr 1fr;
+}

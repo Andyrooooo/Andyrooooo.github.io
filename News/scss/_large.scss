@@ -1,0 +1,29 @@
+main, footer {
+        max-width: 80rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+/*----------- NAVIGATION --------------*/
+
+
+/*----------- MAIN --------------*/
+main div.newsgrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+    
+.mainstory {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+}
+/*----------- FOOTER --------------*/
+    
+footer div.footernav {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
