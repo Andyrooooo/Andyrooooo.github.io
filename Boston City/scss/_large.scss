@@ -1,0 +1,30 @@
+main, footer, nav, header, #headerWrapper {
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+div#headerWrapper {
+        background-image: url(../images/heroimg_large.webp);
+}
+
+/*----------- NAVIGATION --------------*/
+
+
+/*----------- MAIN --------------*/
+main {
+        div#card1, div#card2, div#card3, div#card4 {
+            flex-basis: 21%;
+        }
+}
+
+nav ul li a {
+        font-size: .8rem;
+        padding: .5rem 1.2rem;
+}
+
+/*----------- FOOTER --------------*/

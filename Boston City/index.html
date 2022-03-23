@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="project 09 - Boston City">
+<meta name="author" content="Andrew Kester">
+
+<title>Boston City: Visit</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="https://kit.fontawesome.com/e5ff2f4c45.js" crossorigin="anonymous"></script>
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<div id="headerWrapper">
+	<header>
+        <h1>Boston City</h1>
+        <h2>Where History Comes Alive</h2>
+    </header>
+</div>
+    
+<!-- NAVIGATION HERE -->
+<div id="navWrapper">
+    <nav>
+        <button id="hamburgerBtn">&#9776;</button>
+
+        <ul id="primaryNav">
+            <li><a href="#">Vistit</a>
+            <li class="parent"><a href="#">Department</a>
+            <ul>
+                <li><a href="#">Arts Council</a></li>
+                <li><a href="#">City Council</a></li>
+                <li><a href="#">City Courts</a></li>
+                <li><a href="#">Police</a></li>
+            </ul>
+            </li>
+            <li class="parent"><a href="#">Services</a>
+            <ul>
+                <li><a href="#">Water</a></li>
+                <li class="active"><a href="#">Permits</a></li>
+                <li><a href="#">Electric</a></li>
+                <li><a href="#">Vaccinations</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Pay Bills</a></li>   
+        </ul>
+    </nav>
+</div>
+    
+<!-- CONTENT HERE -->
+<div id="mainWrapper">
+<main>
+        <!--slider images-->
+        <div class="my_slider">
+
+            <picture>
+            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/boston1.webp">
+            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/boston1.webp">
+            <img src="images/sml_screen/boston1.webp" alt="Boston ruring christmas with snow">
+            <div>Boston during christmas</div>
+        </picture>
+        <picture>
+            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/boston2.webp">
+            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/boston2.webp">
+            <img src="images/sml_screen/boston2.webp" alt="Boston in the fall with the water reflecting the buildings">
+            <div>Boston during the fall</div>
+        </picture>
+        <picture>
+            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/boston3.webp">
+            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/boston3.webp">
+            <img src="images/sml_screen/boston3.webp" alt="Boston harbor and city lights">
+            <div>Boston beautiful harbor and city lights</div>
+        </picture>
+        <picture>
+            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/boston4.webp">
+            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/boston4.webp">
+            <img src="images/sml_screen/boston4.webp" alt="Boston harbor at night">
+            <div>Boston city lights</div>
+        </picture>
+        <picture>
+            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/boston5.webp">
+            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/boston5.webp">
+            <img src="images/sml_screen/boston5.webp" alt="Boston State House">
+            <div>Boston's old state house</div>
+        </picture>
+
+    </div><!--End of slider images-->
+
+
+
+        <h1>Plan Your Visit</h1>
+
+
+
+        <div class="cards"> <!-- Beginning of cards-->
+            <div id="card1">
+                <a href="https://www.expedia.com/Hotel-Search?adults=2&d1=2022-04-05&d2=2022-04-06&destination=Boston%20%28and%20vicinity%29%2C%20Massachusetts%2C%20United%20States%20of%20America&endDate=2022-04-06&latLong=42.359355%2C-71.059785&regionId=178239&rooms=1&semdtl=&sort=RECOMMENDED&startDate=2022-04-05&theme=&useRewards=false&userIntent=">
+                    <i class="fa-solid fa-bed"></i>
+                <h3>PLACES TO STAY</h3>
+                </a>
+            </div>
+    
+            <div id="card2">
+                <a href="https://www.getyourguide.com/-l260/?cmp=bing&campaign_id=377863954&adgroup_id=1255642875498620&target_id=kwd-78478013341530%3Aloc-190&match_type=e&ad_id=78477827571395&msclkid=1067a93ff8251f8b9b33cb066ba32679&loc_physical_ms=96081&feed_item_id=&keyword=boston%20visit&partner_id=CD951&utm_medium=paid_search&utm_source=bing&utm_campaign=dc%3D8%3Aus%7Clc%3D260%3Aboston%7Cct%3Dcore%7Cln%3D29%3Aen%7Ctc%3Dus&utm_term=boston%20visit&gclsrc=3p.ds&utm_content=lc%3D260%3Aboston%7Cfn%3Df3%7Cci%3D937%3Athings%20to%20do">
+                    <i class="fa-solid fa-flag-usa"></i>
+                <h3>SEE THE SITES </h3>
+                </a>
+            </div>
+
+            <div id="card3">
+                <a href="https://www.kayak.com/Cheap-Boston-Car-Rentals.25588.cars.ksp?r9ck=iq">
+                    <i class="fa-solid fa-car"></i>
+                <h3>PASS TO THE CITY</h3>
+                </a>
+            </div>
+
+            <div id="card4">
+                <a href="https://www.luciebackbay.com/">
+                    <i class="fa-solid fa-bowl-food"></i>
+                <h3>FINE DINING</h3>
+                </a>
+            </div>
+        </div><!-- End of cards-->
+</main>
+</div>    
+
+<!-- FOOTER HERE -->  
+
+<footer>&copy; 2022 &bull; Andrew Kester &bull; https://github.com/Andyrooooo/</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.my_slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 1000,
+        cssEase: 'ease-out',
+        autoplay: true,
+        autoplaySpeed: 30000
+    });
+});
+</script>
+
+</body>
+</html>

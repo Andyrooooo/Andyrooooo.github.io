@@ -1,0 +1,150 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+div#headerWrapper {
+    background-image: url(../images/heroimg_small.webp);
+}
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header h1 {
+    margin: 0 0 0 2%; 
+    padding-top: 1rem;
+    font-weight: $heavyWeight;
+    color: $blackColor;
+    padding-bottom: .5rem;
+}
+header h2 {
+    color: $blackColor;
+    padding-bottom: .5rem;
+    padding-top: 0;
+    margin: 0 0 0 2%;
+}
+/*----------- NAVIGATION --------------*/
+
+/*----------- MAIN --------------*/
+main h1 {
+    margin-left: 2%;
+}
+/*slider*/
+main picture {
+    position: relative;
+}
+main picture div {
+    position: absolute;
+    bottom: 0;
+    padding-left: 2%;
+    padding-right: 20px;
+    padding-top: 3px;
+    color: $blackColor;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+main picture img {
+    display: block;
+    width: 100%;
+}
+/*end of slider*/
+
+/*cards*/
+main {
+    div#card1, div#card2, div#card3, div#card4 {
+        flex-basis: 98%;
+        margin: 0 2% 1rem 2%;
+        width: 100%;
+    }
+}
+main div.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main div a {
+    display: block;
+    width: 100%;
+    height: 413px;
+    text-decoration: none;
+    padding: 0 2%;
+    transition: all .5s ease-in;
+    color: white;
+    text-align: center;
+}
+main div i {
+    font-size: 48px;
+    padding-top: 20px;
+}
+
+div#card1 {
+    background-image: url("../images/cardimg_448/card1.webp");
+}
+div#card2 {
+    background-image: url("../images/cardimg_448/card2.webp");
+}
+div#card3 {
+    background-image: url("../images/cardimg_448/card3.webp");
+}
+div#card4 {
+    background-image: url("../images/cardimg_448/card4.webp");
+}
+
+div#card1 a {
+    background-color: rgb(192, 192, 33);
+}
+div#card2 a {
+    background-color: $backgroundColor;
+}
+div#card3 a {
+    background-color: rgb(192, 192, 33);
+}
+div#card4 a {
+    background-color: $backgroundColor;
+}
+
+div#card1 a:hover {
+    background: none;
+    text-shadow: 0 0 4px orange;
+}
+div#card2 a:hover {
+    background: none;
+    text-shadow: 0 0 4px orange;
+}
+div#card3 a:hover {
+    background: none;
+    text-shadow: 0 0 4px orange;
+}
+div#card4 a:hover {
+    background: none;
+    text-shadow: 0 0 4px orange;
+}/*end of cards*/
+/*----------- FOOTER --------------*/
+
+
+footer {
+    padding: .5rem 0;
+    text-align: center;
+    color: black;
+    font-family: Roboto;
+    background-color: $backgroundColor;
+}
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,78 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+div#headerWrapper {
+    background-image: url(../images/heroimg_med.webp);
+}
+/*----------- NAVIGATION --------------*/
+ul#primaryNav {margin: 0; padding-left: 0;}
+nav button {display: none;}
+nav {
+    background-color: $backgroundColor;
+}
+nav ul {
+    display: flex;
+    margin-left: 2%;
+    border-left: 1px solid darken($backgroundColor,5%);
+}
+nav ul li { 
+    border-right: 1px solid darken($backgroundColor,5%);
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: block;
+    font-size: .8rem;
+    padding: .9rem 1.2rem;
+    color: $blackColor;
+    text-decoration: none;
+    transition: background 0.3s linear;
+}
+
+nav ul li a:hover {
+    background: rgba(0,0,0,.5)
+}
+
+#primaryNav li.parent > a:after {
+    content: "\25BC";
+    font-size: .65rem;
+    color: $blackColor;
+    float: left;
+}
+ul li ul {
+    display: flex;
+    flex-direction: column;
+    background-color: darken($backgroundColor,5%);
+    border: none;
+    width: 14rem;
+    margin-left: 0;
+    padding-left: 0;
+    position: absolute;
+    left: -999rem;
+    z-index: 99;
+}
+
+ul li ul li {
+    border-right: none;
+    border-top: solid 1px darken($backgroundColor,10%);
+}
+
+ul li:hover ul {
+    left: auto;
+    margin-left: 0;
+}
+li.active a {background-color: darken($backgroundColor,30%);}
+
+/*----------- MAIN --------------*/
+main {
+    div#card1, div#card2, div#card3, div#card4 {
+        flex-basis: 46%;
+    }
+}
+/*----------- FOOTER --------------*/
+    
