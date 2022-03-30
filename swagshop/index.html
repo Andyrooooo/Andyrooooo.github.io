@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="10 Swag Shop">
+<meta name="author" content="Andrew Kester">
+<title>Purchase Order: Wheel Bite</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+      <div id="pageWrapper">
+
+
+  <div id="headerWrapper">  
+<header>
+  <img src="images/logo_2.png" alt="Wheel Bite logo">
+  <h1>Wheel Bite</h1>
+  <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
+</header>
+</div>  
+
+
+<nav> 
+  <div>Wheel Bite</div>
+<ul>
+  <li class="shopping"><a href="index.html">Home</a></li>
+  <li class="locations"><a href="#">Products</a></li>
+  <li><a href="#">Deals</a></li>
+  <li class="active"><a href="#">Order</a></li>
+  <li><a href="#">Customer Reviews</a></li>
+</ul>
+</nav>
+
+
+<div id="mainWrapper">   
+<main>
+   <h1>My Order Details</h1>
+    
+   <img src="images/bearing.webp" alt="bearings stacked on eachother">
+
+   <form method="get" action="thanks.html">
+    <fieldset>
+      <legend>Who's Receiving The Package</legend>
+        <label class="top">First Name* <input type="text" name="fname" required></label>
+        <label class="top">Last Name* <input type="text" name="lname" required></label>
+        <label class="top">Phone Number* <input type="text" name="phone" placeholder="1235551234" required></label>
+        <label class="top">Email <input type="text" name="email" placeholder="something@gmail.com"></label>
+    </fieldset>
+
+
+
+
+    <fieldset>
+      <legend>My Order Information</legend>
+      <label class="top">Date of Order Placed <input type="date" name="orderdate"></label>
+      <label class="top">My Business Name <input type="text" name="bname"></label>
+      <label class="top">My Website Name <input type="url" name="url" placeholder="http://"></label>
+      <label class="top">Choose Bearing Guard Color
+        <select name="coloroptions">
+          <option value="">Please Select &#9662;</option>
+          <option value="software1">Red</option>
+          <option value="software2">Orange</option>
+          <option value="software3">Green</option>
+          <option value="software4">Blue</option>
+          <option value="software5">Yellow</option>
+          <option value="software6">Black</option>
+          <option value="software7">White</option>
+          <option value="software8">Grey</option>
+          <option value="software9">Purple</option> 
+        </select>
+      </label>
+      <label class="top">Amount I Need <input type="number" name="itemquantity"></label>
+      <div>Choose My Bearing Material</div>
+      <label class="middle"><input type="radio" name="audience" value="beginner"> Standard Bearing</label>
+      <label class="middle"><input type="radio" name="audience" value="better"> Ceramic Bearing</label>
+
+    </fieldset>
+
+
+
+    <fieldset>
+      <legend>My Payment Information</legend>
+      <label class="top">Name on my Card* <input type="text" name="cardname" required></label>
+      <label class="top">Card Number* <input type="text" name="cardnmbr" required></label>
+      <label class="top">Expiration Date of My Card* <input type="date" name="carddate" required></label>
+      
+    </fieldset>
+
+    <input type="submit" value = "Process My Order" class="submitBtn">
+
+   </form>
+
+
+  </main>
+</div>
+
+<div id="footerWrapper">          
+<footer>   
+&copy; 2022 &bull; Wheel Bite &bull; phone 801-123-4567 &bull; <a href="#">Login</a>
+</footer>
+</div>
+
+
+
+</div><!-------------------------End of Page Wrapper---------------------->
+<script src="js/scripts.js"></script>
+</body>
+</html>
