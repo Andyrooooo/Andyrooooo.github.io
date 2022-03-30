@@ -517,13 +517,13 @@ form label.top input, form label.top select {
   border: solid 1px black;
   border-radius: 4px;
   padding: .75rem;
-  color: #bfbfbf;
+  color: black;
   width: 100%;
   max-width: 20rem;
   background-color: #e6e6e6; }
 
 form label.top input::placeholder {
-  color: #bfbfbf; }
+  color: black; }
 
 form label.middle {
   display: block;

@@ -132,14 +132,14 @@ form label.top input, form label.top select {
     border: solid 1px black;
     border-radius: 4px;
     padding: .75rem;
-    color: darken(white,25%);
+    color: black;
     width: 100%;
     max-width: 20rem;
     background-color: darken(white,10%);
 }
 
 form label.top input::placeholder {
-    color: darken(white, 25%);
+    color: black;
 }
 
 form label.middle {
