@@ -4,7 +4,6 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-
 div#bodywrapper {
     display: grid;
     grid-template-areas:
@@ -19,7 +18,7 @@ div#bodywrapper {
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -27,7 +26,7 @@ body {
 header {
     grid-area: headr;
     padding: .5rem 2%;
-    background-color: black;
+    background-color: $blackColor;
     h1 {margin: 0;}
     h2 {margin: 0; font-weight: normal;}
 }
@@ -46,7 +45,7 @@ a.myjump{
 
 nav {
     grid-area: nv;
-    background-color: #9ED14A;
+    background-color: $mainColor;
     height: 100vh;
 }
 nav ul {
@@ -83,7 +82,7 @@ nav ul li.active a {
 
 /*----------- HAMBURGER --------------*/
 div#hamburger {
-    background-color: #9ED14A; 
+    background-color: $mainColor; 
     grid-area: hambrgr;
     color: white;
 }
@@ -94,7 +93,7 @@ main {
     grid-area: mainman;
     padding: 0 2%;
     min-height: 10rem;
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(231, 231, 231);
     h1 {margin: 0; padding: 1rem 0 1rem 0;}
 }
 main div.tabletcontent {
@@ -130,7 +129,7 @@ main div#surface {
 /*----------- FOOTER --------------*/
 footer {
     grid-area: ftr;
-    background-color: black;
+    background-color: $blackColor;
     padding: .5rem 2%;
     text-align: center;
     color: white;

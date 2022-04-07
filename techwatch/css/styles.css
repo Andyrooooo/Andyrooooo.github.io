@@ -321,7 +321,7 @@ div#bodywrapper {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: Verdana, sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 /*----------- HEADER --------------*/
 header {
@@ -387,7 +387,7 @@ main {
   grid-area: mainman;
   padding: 0 2%;
   min-height: 10rem;
-  background-color: #eaeaea; }
+  background-color: #e7e7e7; }
   main h1 {
     margin: 0;
     padding: 1rem 0 1rem 0; }
