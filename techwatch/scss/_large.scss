@@ -1,0 +1,44 @@
+
+
+/*----------- BODY --------------*/
+div#bodywrapper {
+        grid-template-areas:
+        "headr"
+        "nv"
+        "mainman"
+        "ftr";
+        grid-template-columns: auto;
+        max-width: 64rem;
+        margin:auto;
+}
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav ul {
+        margin-left: 2%;
+}
+nav ul li {
+        flex-basis: auto;
+}
+nav ul li a {
+        padding: .5rem 1rem;
+}
+
+/*----------- MAIN --------------*/
+
+main div#lenovo img {
+        width: 25%;
+}
+    main div#ipad img {
+        width: 25%;
+}
+    main div#surface img {
+        width: 25%;
+}
+
+/*----------- FOOTER --------------*/
+    

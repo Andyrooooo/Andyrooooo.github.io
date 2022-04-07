@@ -352,131 +352,174 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Serif", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*----------- HEADER --------------*/
+header.clearfix {
+  padding: 0;
+}
+
 header {
   padding: 0.5rem 2%;
-  display: grid;
-  grid-template-columns: 110px auto;
+  background-color: #FFFBE5;
+}
+
+header figure.logo {
+  float: left;
+  margin: 1.5rem 2% 1rem 2%;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
-  font-style: italic;
-  margin-top: 2.2rem;
+  padding: 1rem 0 0 0;
   font-weight: 700;
+  font-family: Noto Serif;
+  color: black;
 }
 
 header h2 {
   margin: 0;
-  font-weight: normal;
-  font-size: 1rem;
+  padding: 0 0 1rem 0;
+  font-weight: 400;
+  color: black;
+  font-size: 1.4rem;
+  font-family: Noto Serif;
 }
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #E81D02;
+  background-color: #E61F26;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: black;
+  padding: 0.4rem 0 0.2rem 4%;
+}
+
+nav button span:nth-child(1) {
+  display: block;
+}
+
+nav button span:nth-child(2) {
+  display: none;
+}
+
+nav button.open span:nth-child(1) {
+  display: none;
+}
+
+nav button.open span:nth-child(2) {
+  display: block;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: none;
 }
 
-nav ul li {
-  width: 100%;
+nav ul.open {
+  display: block;
+}
+
+nav ul li:first-child a {
+  border-top: 1px solid black;
+}
+
+nav ul li:nth-child(2) a {
+  border-top: 1px solid black;
+}
+
+nav ul li:nth-child(3) a {
+  border-top: 1px solid black;
+}
+
+nav ul li:nth-child(4) a {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 nav ul li a {
   display: block;
-  background-color: #b51702;
-  color: #eee;
-  /* border-left: 1px solid #777;  might not need */
-  padding: 0.5rem 2%;
+  background-color: #E61F26;
+  color: black;
+  padding: 0.5rem 0;
   text-decoration: none;
   font-size: 0.9rem;
-  text-align: right;
-}
-
-nav ul li:first-child a {
-  border-left: none;
+  text-align: left;
+  padding-left: 2%;
+  font-family: Roboto;
+  font-weight: 500;
 }
 
 nav ul li a:hover {
-  background-color: #fd2407;
-  color: #333;
+  background-color: #8f1014;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 500;
 }
 
 nav ul li.active a {
-  background-color: #500a01;
+  background-color: #610b0e;
   color: #fff;
+  font-family: Roboto;
+  font-weight: 500;
 }
 
 /*----------- MAIN --------------*/
-main {
-  padding: 0;
-  /*This is where the rest of the gap between the window and the images is coming from*/
-  min-height: 10rem;
-}
-
-main h1 {
-  padding-left: 2%;
-}
-
-main h1 {
-  margin-bottom: 0;
-}
-
-main div figure {
-  text-align: center;
-}
-
-div.fruit_gallery {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-div.fruit_gallery figure {
-  flex-basis: 47%;
-  /*If we change the padding to margin down below here then we need to make the flex basis 98%*/
-  margin: 1rem 2%;
-  /*Might need to change the padding from main to here and have it as margin: 1rem 2%*/
-}
-
-div.fruit_gallery figure img {
+main picture.photoA {
+  display: block;
   width: 100%;
 }
 
-div figure.banana {
-  margin-left: 0;
-  margin-top: 0;
+main picture.photoA img, main picture.photoB img {
+  width: 100%;
 }
 
-div figure.kiwi {
-  margin-left: 0;
+main picture.photoB div {
+  text-align: center;
+  font-weight: 300;
+  font-family: Roboto;
 }
 
-div figure.pear {
-  margin-left: 0;
+picture.photoB {
+  display: block;
+  float: right;
+  width: 46%;
+  margin: 0 2%;
 }
 
-div figure.strawberry {
-  margin-left: 0;
+main {
+  padding: 0 0 1.5rem 0;
+  min-height: 10rem;
+}
+main h2 {
+  margin: 0;
+  padding: 1.5rem 0 1.5rem 2%;
+  font-weight: 500;
+}
+main p {
+  padding: 0;
+  margin: 0 2%;
+  font-family: Roboto;
+  font-weight: 300;
 }
 
-div figure.apple {
-  margin-top: 0;
-}
-
+/* end of main*/
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #E81D02;
+  background-color: #E61F26;
   padding: 0.5rem 2%;
   text-align: center;
+  color: black;
+  font-family: Roboto;
+  font-weight: 500;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -489,112 +532,114 @@ footer {
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
-  /* header h1 {font-size: 1.6rem; margin-top: 3rem;}
-  header h2 {font-size: 1.3rem;} */
-  /*----------- NAVIGATION --------------*/
-  nav ul {
-    margin-left: 2%;
-    margin-right: 2%;
-    display: flex;
-    justify-content: flex-end;
+  header h1 {
+    margin: 0;
+    padding: 1rem 0 0 0;
   }
 
-  nav ul li {
-    width: auto;
+  /*----------- NAVIGATION --------------*/
+  nav button {
+    display: none;
+  }
+  nav ul, nav ul.open {
+    border: none;
+    display: flex;
+    justify-content: left;
+  }
+  nav ul li a {
+    padding: 0.8rem;
+  }
+  nav ul li a {
+    border: none;
   }
 
   nav ul li:first-child a {
-    border-right: 1px solid white;
+    border-top: none;
   }
 
-  nav ul li.active {
-    border-right: 1px solid white;
+  nav ul li:nth-child(2) a {
+    border-top: none;
   }
 
-  nav ul li:last-child a {
-    border-left: 1px solid white;
+  nav ul li:nth-child(3) a {
+    border-top: none;
   }
 
-  nav ul li a {
-    padding: 0.5rem 1rem;
+  nav ul li:nth-child(4) a {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  nav ul li:first-child a {
+    border-right: 1px solid black;
+  }
+
+  nav ul li:nth-child(2) a {
+    border-right: 1px solid black;
+  }
+
+  nav ul li:nth-child(3) a {
+    border-right: 1px solid black;
   }
 
   /*----------- MAIN --------------*/
-  div.fruit_gallery figure {
-    flex-basis: 30.66%;
-  }
-
-  div figure.banana {
-    margin-left: 0;
-  }
-
-  div figure.kiwi {
-    margin-left: 2%;
-  }
-
-  div figure.pear {
-    margin-left: 0;
-  }
-
-  div figure.strawberry {
-    margin-left: 0;
-  }
-
-  div figure.orange {
-    margin-left: 0;
-  }
-
-  div figure.blueberry {
-    margin-left: 0;
-    margin-top: 0;
-  }
-
   /*----------- FOOTER --------------*/
 }
 /* end of media query */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 75rem) {
   header, nav, main, footer {
-    max-width: 71.25rem;
+    max-width: 75rem;
     margin: auto;
   }
 
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
+  nav button {
+    display: none;
+  }
+  nav ul, nav ul.open {
+    border: none;
+    display: flex;
+    justify-content: left;
+  }
+  nav ul li a {
+    padding: 0.8rem;
+  }
+  nav ul li a {
+    border: none;
+  }
+
+  nav ul li:first-child a {
+    border-top: none;
+  }
+
+  nav ul li:nth-child(2) a {
+    border-top: none;
+  }
+
+  nav ul li:nth-child(3) a {
+    border-top: none;
+  }
+
+  nav ul li:nth-child(4) a {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  nav ul li:first-child a {
+    border-right: 1px solid black;
+  }
+
+  nav ul li:nth-child(2) a {
+    border-right: 1px solid black;
+  }
+
+  nav ul li:nth-child(3) a {
+    border-right: 1px solid black;
+  }
+
   /*----------- MAIN --------------*/
-  div.fruit_gallery figure {
-    flex-basis: 22.5%;
-  }
-
-  div figure.banana {
-    margin-left: 0;
-  }
-
-  div figure.kiwi {
-    margin-left: 0;
-    margin-top: 0;
-  }
-
-  div figure.pear {
-    margin-left: 0;
-  }
-
-  div figure.strawberry {
-    margin-left: 0;
-  }
-
-  div figure.orange {
-    margin-left: 2%;
-  }
-
-  div figure.blueberry {
-    margin-left: 0;
-  }
-
-  div figure.pineapple {
-    margin-left: 0;
-  }
-
   /*----------- FOOTER --------------*/
 }
 /* end of media query *//*# sourceMappingURL=styles.css.map */

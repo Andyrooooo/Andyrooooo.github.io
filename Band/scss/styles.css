@@ -352,131 +352,215 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Serif", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*----------- HEADER --------------*/
+header.clearfix {
+  padding: 0;
+}
+
 header {
-  padding: 0.5rem 2%;
+  background-color: #e22609;
   display: grid;
-  grid-template-columns: 110px auto;
+  grid-template-columns: 130px auto;
+}
+
+header figure.logo {
+  margin: 1rem 0 0.7rem 1rem;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
-  font-style: italic;
-  margin-top: 2.2rem;
+  padding: 2.8rem 0 0 0;
   font-weight: 700;
+  font-family: Noto Serif;
+  color: black;
 }
 
-header h2 {
-  margin: 0;
-  font-weight: normal;
-  font-size: 1rem;
-}
-
+/* header h2 {
+    margin: 0; 
+    padding: 0 0 .5rem 0;
+    font-weight: $middleWeight;
+    color: $blackColor;
+    font-size: 1.4rem;
+    font-family: Noto Serif;
+}       WE DONT KNOW IF WE STILL NEED THIS*/
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #E81D02;
+  background-color: #e22609;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  font-size: 2.65rem;
+  font-weight: 800;
+  color: black;
+  position: absolute;
+  top: 2.6rem;
+  right: 0.4rem;
+}
+
+nav button span:nth-child(1) {
+  display: block;
+}
+
+nav button span:nth-child(2) {
+  display: none;
+}
+
+nav button.open span:nth-child(1) {
+  display: none;
+}
+
+nav button.open span:nth-child(2) {
+  display: block;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-nav ul li {
+  display: none;
+  position: absolute;
+  top: 8.15rem;
+  right: 0;
   width: 100%;
+  z-index: 1;
 }
 
+nav ul.open {
+  display: block;
+}
+
+/* nav ul li:first-child a {border-top: 1px solid $blackColor;}
+nav ul li:nth-child(2) a {border-top: 1px solid $blackColor;}
+nav ul li:nth-child(3) a {border-top: 1px solid $blackColor;}
+nav ul li:nth-child(4) a {border-top: 1px solid $blackColor; border-bottom: 1px solid $blackColor;}  DONT NEED*/
 nav ul li a {
   display: block;
-  background-color: #b51702;
-  color: #eee;
-  /* border-left: 1px solid #777;  might not need */
-  padding: 0.5rem 2%;
+  background-color: #D2D2D2;
+  color: black;
+  padding: 10px 1rem;
   text-decoration: none;
   font-size: 0.9rem;
-  text-align: right;
-}
-
-nav ul li:first-child a {
-  border-left: none;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 500;
 }
 
 nav ul li a:hover {
-  background-color: #fd2407;
-  color: #333;
+  background-color: #801605;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 500;
 }
 
 nav ul li.active a {
-  background-color: #500a01;
+  background-color: #360902;
   color: #fff;
+  font-family: Roboto;
+  font-weight: 500;
 }
 
 /*----------- MAIN --------------*/
 main {
-  padding: 0;
-  /*This is where the rest of the gap between the window and the images is coming from*/
+  padding: 0 2% 1.5rem 2%;
   min-height: 10rem;
 }
-
 main h1 {
-  padding-left: 2%;
+  margin: 0;
+  padding: 1rem 0 1rem 0;
+  font-weight: 500;
 }
 
-main h1 {
-  margin-bottom: 0;
-}
-
-main div figure {
-  text-align: center;
-}
-
-div.fruit_gallery {
+main div.bandbio {
   display: flex;
   flex-wrap: wrap;
 }
 
-div.fruit_gallery figure {
-  flex-basis: 47%;
-  /*If we change the padding to margin down below here then we need to make the flex basis 98%*/
-  margin: 1rem 2%;
-  /*Might need to change the padding from main to here and have it as margin: 1rem 2%*/
+main div.bandbio div {
+  flex-basis: 100%;
 }
 
-div.fruit_gallery figure img {
+main div figure.circle {
+  padding: 0;
+  margin: 0;
+}
+
+main div figure.circle img {
+  float: left;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+          clip-path: polygon(100% 0, 0 0, 0 100%);
+  shape-outside: polygon(100% 0, 0 0, 0 100%);
+}
+
+main div figure.triangle {
+  padding: 0;
+  margin: 0;
+}
+
+main div figure.triangle img {
+  float: right;
+  -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+          clip-path: polygon(100% 0, 0 0, 100% 100%);
+  shape-outside: polygon(100% 0, 0 0, 100% 100%);
+}
+
+main div figure.leftpoint {
+  padding: 0;
+  margin: 0;
+}
+
+main div figure.leftpoint img {
+  float: left;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+          clip-path: polygon(100% 0, 0 0, 0 100%);
+  shape-outside: polygon(100% 0, 0 0, 0 100%);
+}
+
+main div figure.halfcircle {
+  padding: 0;
+  margin: 0;
+}
+
+main div figure.halfcircle img {
+  float: right;
+  -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+          clip-path: polygon(100% 0, 0 0, 100% 100%);
+  shape-outside: polygon(100% 0, 0 0, 100% 100%);
+}
+
+/* Start of the image gallery*/
+section.imagegallery figure {
   width: 100%;
+  height: 0;
+  padding-bottom: 55%;
+  position: relative;
+  margin: 0;
 }
 
-div figure.banana {
-  margin-left: 0;
-  margin-top: 0;
+section.imagegallery figure img {
+  width: 100%;
+  height: auto;
+  position: absolute;
 }
 
-div figure.kiwi {
-  margin-left: 0;
-}
-
-div figure.pear {
-  margin-left: 0;
-}
-
-div figure.strawberry {
-  margin-left: 0;
-}
-
-div figure.apple {
-  margin-top: 0;
+/* end of main*/
+main h2 {
+  padding: 1.5rem 0 0.5rem 0;
 }
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #E81D02;
+  background-color: #e22609;
   padding: 0.5rem 2%;
   text-align: center;
+  color: black;
+  font-family: Roboto;
+  font-weight: 500;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -489,110 +573,126 @@ footer {
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
-  /* header h1 {font-size: 1.6rem; margin-top: 3rem;}
-  header h2 {font-size: 1.3rem;} */
   /*----------- NAVIGATION --------------*/
   nav ul {
-    margin-left: 2%;
-    margin-right: 2%;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  nav ul li {
-    width: auto;
-  }
-
-  nav ul li:first-child a {
-    border-right: 1px solid white;
-  }
-
-  nav ul li.active {
-    border-right: 1px solid white;
-  }
-
-  nav ul li:last-child a {
-    border-left: 1px solid white;
-  }
-
-  nav ul li a {
-    padding: 0.5rem 1rem;
+    width: 250px;
   }
 
   /*----------- MAIN --------------*/
-  div.fruit_gallery figure {
-    flex-basis: 30.66%;
+  main div.bandbio div {
+    flex-basis: 49%;
   }
 
-  div figure.banana {
-    margin-left: 0;
+  main div.jimmy {
+    margin-right: 2%;
   }
 
-  div figure.kiwi {
-    margin-left: 2%;
-  }
-
-  div figure.pear {
-    margin-left: 0;
-  }
-
-  div figure.strawberry {
-    margin-left: 0;
-  }
-
-  div figure.orange {
-    margin-left: 0;
-  }
-
-  div figure.blueberry {
-    margin-left: 0;
-    margin-top: 0;
+  main div.paul {
+    margin-right: 2%;
   }
 
   /*----------- FOOTER --------------*/
 }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
-  header, nav, main, footer {
-    max-width: 71.25rem;
+  header, main, footer {
+    max-width: 75rem;
     margin: auto;
   }
 
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  header {
+    grid-template-columns: 130px auto auto;
+  }
+
   /*----------- NAVIGATION --------------*/
+  nav {
+    justify-self: end;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul, nav ul.open {
+    border: none;
+    display: flex;
+    position: relative;
+    width: auto;
+    right: 0;
+    top: 3rem;
+    padding-right: 1rem;
+  }
+  nav ul li a {
+    border: none;
+    border-radius: 10px;
+    margin: 0 5px;
+  }
+
+  nav ul li:first-child a {
+    border-top: none;
+  }
+
+  nav ul li:nth-child(2) a {
+    border-top: none;
+  }
+
+  nav ul li:nth-child(3) a {
+    border-top: none;
+  }
+
+  nav ul li:nth-child(4) a {
+    border-top: none;
+    border-bottom: none;
+    margin-right: 0;
+  }
+
+  nav ul li:first-child a {
+    border-right: 1px solid black;
+  }
+
+  nav ul li:nth-child(2) a {
+    border-right: 1px solid black;
+  }
+
+  nav ul li:nth-child(3) a {
+    border-right: 1px solid black;
+  }
+
+  nav ul li:nth-child(4) a {
+    border-right: 1px solid black;
+  }
+
+  nav ul li:first-child a {
+    border-bottom: 1px solid black;
+  }
+
+  nav ul li:nth-child(2) a {
+    border-bottom: 1px solid black;
+  }
+
+  nav ul li:nth-child(3) a {
+    border-bottom: 1px solid black;
+  }
+
+  nav ul li:nth-child(4) a {
+    border-bottom: 1px solid black;
+  }
+
   /*----------- MAIN --------------*/
-  div.fruit_gallery figure {
-    flex-basis: 22.5%;
+  main div.bandbio div {
+    flex-basis: 23%;
   }
 
-  div figure.banana {
-    margin-left: 0;
+  main div.jimmy {
+    margin-right: 2%;
   }
 
-  div figure.kiwi {
-    margin-left: 0;
-    margin-top: 0;
+  main div.paul {
+    margin-right: 2%;
   }
 
-  div figure.pear {
-    margin-left: 0;
-  }
-
-  div figure.strawberry {
-    margin-left: 0;
-  }
-
-  div figure.orange {
-    margin-left: 2%;
-  }
-
-  div figure.blueberry {
-    margin-left: 0;
-  }
-
-  div figure.pineapple {
-    margin-left: 0;
+  main div.robert {
+    margin-right: 2%;
   }
 
   /*----------- FOOTER --------------*/

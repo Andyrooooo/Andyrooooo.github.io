@@ -352,131 +352,290 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Serif", sans-serif;
 }
 
 /*----------- HEADER --------------*/
+div#headerWrapper {
+  background-image: url(../images/Header-assets/header-small.jpg);
+  height: 140px;
+}
+
+/* This sets the height for the image*/
 header {
   padding: 0.5rem 2%;
-  display: grid;
-  grid-template-columns: 110px auto;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
-  font-style: italic;
-  margin-top: 2.2rem;
+  padding-top: 4rem;
   font-weight: 700;
+  color: white;
 }
 
 header h2 {
   margin: 0;
   font-weight: normal;
-  font-size: 1rem;
+  font-weight: 500;
+  color: white;
 }
 
 /*----------- NAVIGATION --------------*/
-nav {
-  background-color: #E81D02;
+div#navWrapper {
+  background-color: #70A962;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: black;
+  padding: 0.4rem 0 0.2rem 2%;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: none;
 }
 
-nav ul li {
-  width: 100%;
+nav ul.open {
+  display: block;
+}
+
+nav ul li:first-child a {
+  border-top: 1px solid black;
+}
+
+nav ul li:nth-child(2) a {
+  border-top: 1px solid black;
+}
+
+nav ul li:nth-child(3) a {
+  border-top: 1px solid black;
+}
+
+nav ul li:nth-child(4) a {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 nav ul li a {
   display: block;
-  background-color: #b51702;
-  color: #eee;
-  /* border-left: 1px solid #777;  might not need */
-  padding: 0.5rem 2%;
+  background-color: #70A962;
+  color: black;
+  padding: 0.5rem 0;
   text-decoration: none;
   font-size: 0.9rem;
-  text-align: right;
-}
-
-nav ul li:first-child a {
-  border-left: none;
+  text-align: left;
+  padding-left: 2%;
+  font-family: Roboto;
 }
 
 nav ul li a:hover {
-  background-color: #fd2407;
-  color: #333;
+  background-color: #446b3a;
+  color: #fff;
 }
 
 nav ul li.active a {
-  background-color: #500a01;
+  background-color: #2f4a28;
   color: #fff;
 }
 
 /*----------- MAIN --------------*/
 main {
-  padding: 0;
-  /*This is where the rest of the gap between the window and the images is coming from*/
+  padding: 0 0 1.5rem;
   min-height: 10rem;
 }
-
 main h1 {
-  padding-left: 2%;
+  margin: 0;
+  padding: 1.5rem 0 1.5rem 2%;
 }
-
-main h1 {
-  margin-bottom: 0;
-}
-
-main div figure {
-  text-align: center;
-}
-
-div.fruit_gallery {
+main div.allCards {
   display: flex;
   flex-wrap: wrap;
 }
-
-div.fruit_gallery figure {
-  flex-basis: 47%;
-  /*If we change the padding to margin down below here then we need to make the flex basis 98%*/
-  margin: 1rem 2%;
-  /*Might need to change the padding from main to here and have it as margin: 1rem 2%*/
+main div.card {
+  flex-basis: 98%;
+  border-radius: 10px;
+  margin: 0 2% 1rem 2%;
+  background-color: #70A962;
+}
+main div.card h2 {
+  border-bottom: 1px solid black;
+  padding: 15px 5px 8px 5px;
+  margin: 0;
+  font-size: 1.6rem;
+  text-align: center;
+  color: black;
+}
+main div.card:hover h2 {
+  -webkit-animation: changecolor 2s 1;
+          animation: changecolor 2s 1;
+}
+@-webkit-keyframes changecolor {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: yellow;
+  }
+}
+@keyframes changecolor {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: yellow;
+  }
+}
+main div.card:hover img {
+  -webkit-animation: bounce 2s 1;
+          animation: bounce 2s 1;
+}
+main img {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 48px;
+  height: 48px;
+}
+@-webkit-keyframes bounce {
+  0% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  15% {
+    bottom: 20px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  30% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  45% {
+    bottom: 15px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  60% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  75% {
+    bottom: 10px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    bottom: 3px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@keyframes bounce {
+  0% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  15% {
+    bottom: 20px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  30% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  45% {
+    bottom: 15px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  60% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  75% {
+    bottom: 10px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    bottom: 0px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    bottom: 3px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+main p {
+  padding: 0 10px;
+  font-family: Roboto;
+  font-weight: 400;
+  color: black;
+  margin-top: 16px;
+}
+main a {
+  display: block;
+  background-color: #accda4;
+  color: black;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 1rem;
+  text-decoration: none;
+  font-family: Roboto;
+  text-align: center;
+}
+main a:hover {
+  color: white;
+  background-color: #446b3a;
 }
 
-div.fruit_gallery figure img {
-  width: 100%;
-}
-
-div figure.banana {
-  margin-left: 0;
-  margin-top: 0;
-}
-
-div figure.kiwi {
-  margin-left: 0;
-}
-
-div figure.pear {
-  margin-left: 0;
-}
-
-div figure.strawberry {
-  margin-left: 0;
-}
-
-div figure.apple {
-  margin-top: 0;
-}
-
+/* end of main*/
 /*----------- FOOTER --------------*/
+div#footerWrapper {
+  background-color: #70A962;
+}
+
+/* This extends the color all the way across the page*/
 footer {
-  background-color: #E81D02;
   padding: 0.5rem 2%;
   text-align: center;
+  color: black;
+  font-family: Roboto;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -489,110 +648,108 @@ footer {
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
-  /* header h1 {font-size: 1.6rem; margin-top: 3rem;}
-  header h2 {font-size: 1.3rem;} */
+  div#headerWrapper {
+    background-image: url(../images/Header-assets/header-medium.jpg);
+    height: 240px;
+  }
+
+  /* This sets the height for the image*/
+  header h1 {
+    padding-top: 10rem;
+  }
+
   /*----------- NAVIGATION --------------*/
-  nav ul {
-    margin-left: 2%;
-    margin-right: 2%;
-    display: flex;
-    justify-content: flex-end;
+  nav button {
+    padding-left: 2%;
   }
 
   nav ul li {
     width: auto;
   }
 
-  nav ul li:first-child a {
-    border-right: 1px solid white;
-  }
-
-  nav ul li.active {
-    border-right: 1px solid white;
-  }
-
-  nav ul li:last-child a {
-    border-left: 1px solid white;
-  }
-
   nav ul li a {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 2%;
   }
 
   /*----------- MAIN --------------*/
-  div.fruit_gallery figure {
-    flex-basis: 30.66%;
-  }
-
-  div figure.banana {
-    margin-left: 0;
-  }
-
-  div figure.kiwi {
-    margin-left: 2%;
-  }
-
-  div figure.pear {
-    margin-left: 0;
-  }
-
-  div figure.strawberry {
-    margin-left: 0;
-  }
-
-  div figure.orange {
-    margin-left: 0;
-  }
-
-  div figure.blueberry {
-    margin-left: 0;
-    margin-top: 0;
+  main div.card {
+    flex-basis: 46%;
   }
 
   /*----------- FOOTER --------------*/
 }
 /* end of media query */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 60rem) {
   header, nav, main, footer {
-    max-width: 71.25rem;
+    max-width: 60rem;
     margin: auto;
   }
 
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  div#headerWrapper {
+    background-image: url(../images/Header-assets/header-large.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  header h1 {
+    padding-top: 20rem;
+  }
+
+  /* This sets the height for the image*/
   /*----------- NAVIGATION --------------*/
+  nav {
+    padding-right: 2%;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul, nav ul.open {
+    border: none;
+    display: flex;
+    justify-content: right;
+  }
+  nav ul li a {
+    padding: 0.8rem;
+  }
+  nav ul li a {
+    border: none;
+  }
+
+  nav ul li:first-child a {
+    border-top: none;
+  }
+
+  nav ul li:nth-child(2) a {
+    border-top: none;
+  }
+
+  nav ul li:nth-child(3) a {
+    border-top: none;
+  }
+
+  nav ul li:nth-child(4) a {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  nav ul li:first-child a {
+    border-right: 1px solid black;
+  }
+
+  nav ul li:nth-child(2) a {
+    border-right: 1px solid black;
+  }
+
+  nav ul li:nth-child(3) a {
+    border-right: 1px solid black;
+  }
+
   /*----------- MAIN --------------*/
-  div.fruit_gallery figure {
-    flex-basis: 22.5%;
-  }
-
-  div figure.banana {
-    margin-left: 0;
-  }
-
-  div figure.kiwi {
-    margin-left: 0;
-    margin-top: 0;
-  }
-
-  div figure.pear {
-    margin-left: 0;
-  }
-
-  div figure.strawberry {
-    margin-left: 0;
-  }
-
-  div figure.orange {
-    margin-left: 2%;
-  }
-
-  div figure.blueberry {
-    margin-left: 0;
-  }
-
-  div figure.pineapple {
-    margin-left: 0;
+  main div.card {
+    flex-basis: 29%;
   }
 
   /*----------- FOOTER --------------*/

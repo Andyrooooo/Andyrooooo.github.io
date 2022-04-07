@@ -1,0 +1,43 @@
+
+
+
+/*----------- BODY --------------*/
+div#bodywrapper {
+    grid-template-areas:
+    "headr headr"
+    "nv mainman"
+    "ftr ftr";
+    grid-template-columns: 150px auto;
+}
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+a.myjump {display: none;}
+nav {height: auto;}
+/*----------- MAIN --------------*/
+main div#lenovo img {
+    display: block;
+    width: 45%;
+    float: right;
+    margin-left: 1rem;
+}
+main div#ipad img {
+    display: block;
+    width: 45%;
+    float: left;
+    margin-right: 1rem;
+}
+main div#surface img {
+    display: block;
+    width: 45%;
+    float: right;
+    margin-left: 1rem;
+}
+
+
+/*----------- FOOTER --------------*/
+    

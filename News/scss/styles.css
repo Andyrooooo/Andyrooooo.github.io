@@ -352,131 +352,172 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Serif", sans-serif;
 }
 
 /*----------- HEADER --------------*/
 header {
   padding: 0.5rem 2%;
-  display: grid;
-  grid-template-columns: 110px auto;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-style: italic;
-  margin-top: 2.2rem;
-  font-weight: 700;
-}
-
-header h2 {
-  margin: 0;
-  font-weight: normal;
-  font-size: 1rem;
+header img {
+  border-radius: 10px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 /*----------- NAVIGATION --------------*/
-nav {
-  background-color: #E81D02;
+#navWrapper {
+  background-color: #bc191a;
+}
+
+nav button {
+  position: relative;
+  background: none;
+  border: none;
+  height: 44px;
+  width: 44px;
+}
+nav button .line {
+  position: absolute;
+  height: 2px;
+  width: 60%;
+  left: 20%;
+  transition: all 0.2s ease;
+  background-color: white;
+}
+nav button .top {
+  top: 29%;
+}
+nav button .middle {
+  top: 48%;
+}
+nav button .bottom {
+  top: 67%;
+}
+
+#hamburgerBtn.open .top {
+  transform: rotate(45deg);
+  top: 48%;
+}
+#hamburgerBtn.open .middle, #hamburgerBtn.open .bottom {
+  transform: rotate(-45deg);
+  top: 48%;
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
+  display: none;
   margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  width: 100%;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 nav ul li a {
   display: block;
-  background-color: #b51702;
-  color: #eee;
-  /* border-left: 1px solid #777;  might not need */
-  padding: 0.5rem 2%;
+  background-color: #bc191a;
+  color: black;
+  padding: 0.5rem 0;
   text-decoration: none;
   font-size: 0.9rem;
-  text-align: right;
+  text-align: left;
+  padding-left: 2%;
+  font-family: Roboto;
 }
 
-nav ul li:first-child a {
-  border-left: none;
+nav ul li:first-child {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+nav ul li:nth-child(2) {
+  border-bottom: 1px solid white;
+}
+
+nav ul li:nth-child(3) {
+  border-bottom: 1px solid white;
 }
 
 nav ul li a:hover {
-  background-color: #fd2407;
-  color: #333;
-}
-
-nav ul li.active a {
-  background-color: #500a01;
+  background-color: #620d0e;
   color: #fff;
 }
 
+nav ul li.active a {
+  background-color: #350707;
+  color: #fff;
+}
+
+ul.open {
+  display: block;
+}
+
 /*----------- MAIN --------------*/
-main {
-  padding: 0;
-  /*This is where the rest of the gap between the window and the images is coming from*/
-  min-height: 10rem;
+main div.newsgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin-bottom: 3rem;
 }
 
-main h1 {
-  padding-left: 2%;
-}
-
-main h1 {
-  margin-bottom: 0;
-}
-
-main div figure {
+main span {
+  display: block;
   text-align: center;
+  font-size: 0.75rem;
 }
 
-div.fruit_gallery {
-  display: flex;
-  flex-wrap: wrap;
+.mainstory, .others {
+  padding: 0.5rem 2vw;
 }
 
-div.fruit_gallery figure {
-  flex-basis: 47%;
-  /*If we change the padding to margin down below here then we need to make the flex basis 98%*/
-  margin: 1rem 2%;
-  /*Might need to change the padding from main to here and have it as margin: 1rem 2%*/
-}
-
-div.fruit_gallery figure img {
+.mainstory img, .others img {
   width: 100%;
 }
 
-div figure.banana {
-  margin-left: 0;
-  margin-top: 0;
-}
-
-div figure.kiwi {
-  margin-left: 0;
-}
-
-div figure.pear {
-  margin-left: 0;
-}
-
-div figure.strawberry {
-  margin-left: 0;
-}
-
-div figure.apple {
-  margin-top: 0;
+.mainstory {
+  grid-column: 1/span 2;
 }
 
 /*----------- FOOTER --------------*/
+footer div.footernav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  text-align: left;
+  padding: 0.5rem 10vw;
+  margin-bottom: 3rem;
+}
+
+footer h1 {
+  margin-bottom: 0.5rem;
+}
+
+footer div a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.1rem 0;
+}
+
+footer div a:hover {
+  color: #080101;
+}
+
 footer {
-  background-color: #E81D02;
-  padding: 0.5rem 2%;
+  padding: 0.5rem 0;
   text-align: center;
+  color: white;
+  font-family: Roboto;
+}
+
+div#footerWrapper {
+  background-color: #bc191a;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -489,72 +530,77 @@ footer {
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
-  /* header h1 {font-size: 1.6rem; margin-top: 3rem;}
-  header h2 {font-size: 1.3rem;} */
   /*----------- NAVIGATION --------------*/
+  nav button {
+    display: none;
+  }
+
+  #primaryNav {
+    display: flex;
+  }
+
   nav ul {
     margin-left: 2%;
-    margin-right: 2%;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  nav ul li {
-    width: auto;
-  }
-
-  nav ul li:first-child a {
-    border-right: 1px solid white;
-  }
-
-  nav ul li.active {
-    border-right: 1px solid white;
-  }
-
-  nav ul li:last-child a {
-    border-left: 1px solid white;
   }
 
   nav ul li a {
-    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+  }
+
+  /*border for medium*/
+  nav ul li:first-child {
+    border-right: 1px solid white;
+  }
+
+  nav ul li:nth-child(2) {
+    border-right: 1px solid white;
+  }
+
+  nav ul li:nth-child(3) {
+    border-right: 1px solid white;
+  }
+
+  nav ul li:nth-child(4) {
+    border-right: 1px solid white;
+  }
+
+  /*remove small border*/
+  nav ul li:first-child {
+    border-bottom: none;
+    border-top: none;
+  }
+
+  nav ul li:nth-child(2) {
+    border-bottom: none;
+  }
+
+  nav ul li:nth-child(3) {
+    border-bottom: none;
   }
 
   /*----------- MAIN --------------*/
-  div.fruit_gallery figure {
-    flex-basis: 30.66%;
+  main div.newsgrid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
-  div figure.banana {
-    margin-left: 0;
+  main span {
+    font-size: 1rem;
   }
 
-  div figure.kiwi {
-    margin-left: 2%;
-  }
-
-  div figure.pear {
-    margin-left: 0;
-  }
-
-  div figure.strawberry {
-    margin-left: 0;
-  }
-
-  div figure.orange {
-    margin-left: 0;
-  }
-
-  div figure.blueberry {
-    margin-left: 0;
-    margin-top: 0;
+  .mainstory {
+    grid-column: 1/span 3;
   }
 
   /*----------- FOOTER --------------*/
+  footer div.footernav {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 /* end of media query */
-@media only screen and (min-width: 64rem) {
-  header, nav, main, footer {
-    max-width: 71.25rem;
+@media only screen and (min-width: 60rem) {
+  main, footer {
+    max-width: 80rem;
     margin: auto;
   }
 
@@ -562,39 +608,18 @@ footer {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
-  div.fruit_gallery figure {
-    flex-basis: 22.5%;
+  main div.newsgrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  div figure.banana {
-    margin-left: 0;
-  }
-
-  div figure.kiwi {
-    margin-left: 0;
-    margin-top: 0;
-  }
-
-  div figure.pear {
-    margin-left: 0;
-  }
-
-  div figure.strawberry {
-    margin-left: 0;
-  }
-
-  div figure.orange {
-    margin-left: 2%;
-  }
-
-  div figure.blueberry {
-    margin-left: 0;
-  }
-
-  div figure.pineapple {
-    margin-left: 0;
+  .mainstory {
+    grid-column: 1/span 3;
+    grid-row: 1/span 2;
   }
 
   /*----------- FOOTER --------------*/
+  footer div.footernav {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 /* end of media query *//*# sourceMappingURL=styles.css.map */

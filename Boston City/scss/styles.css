@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,6 +6,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import "../slick/slick-theme.css";
+@import "../slick/slick.css";
 html {
   line-height: 1.15;
   /* 1 */
@@ -352,131 +355,149 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Serif", sans-serif;
 }
 
 /*----------- HEADER --------------*/
+div#headerWrapper {
+  background-image: url(../images/heroimg_small.webp);
+}
+
 header {
-  padding: 0.5rem 2%;
-  display: grid;
-  grid-template-columns: 110px auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-style: italic;
-  margin-top: 2.2rem;
+  margin: 0 0 0 2%;
+  padding-top: 1rem;
   font-weight: 700;
+  color: white;
+  padding-bottom: 0.5rem;
 }
 
 header h2 {
-  margin: 0;
-  font-weight: normal;
-  font-size: 1rem;
+  color: white;
+  padding-bottom: 0.5rem;
+  padding-top: 0;
+  margin: 0 0 0 2%;
 }
 
 /*----------- NAVIGATION --------------*/
-nav {
-  background-color: #E81D02;
+/*----------- MAIN --------------*/
+main h1 {
+  margin-left: 2%;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+/*slider*/
+main picture {
+  position: relative;
 }
 
-nav ul li {
+main picture div {
+  position: absolute;
+  bottom: 0;
+  padding-left: 2%;
+  padding-right: 20px;
+  padding-top: 3px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+main picture img {
+  display: block;
   width: 100%;
 }
 
-nav ul li a {
-  display: block;
-  background-color: #b51702;
-  color: #eee;
-  /* border-left: 1px solid #777;  might not need */
-  padding: 0.5rem 2%;
-  text-decoration: none;
-  font-size: 0.9rem;
-  text-align: right;
+/*end of slider*/
+/*cards*/
+main div#card1, main div#card2, main div#card3, main div#card4 {
+  flex-basis: 98%;
+  margin: 0 2% 1rem 2%;
+  width: 100%;
 }
 
-nav ul li:first-child a {
-  border-left: none;
-}
-
-nav ul li a:hover {
-  background-color: #fd2407;
-  color: #333;
-}
-
-nav ul li.active a {
-  background-color: #500a01;
-  color: #fff;
-}
-
-/*----------- MAIN --------------*/
-main {
-  padding: 0;
-  /*This is where the rest of the gap between the window and the images is coming from*/
-  min-height: 10rem;
-}
-
-main h1 {
-  padding-left: 2%;
-}
-
-main h1 {
-  margin-bottom: 0;
-}
-
-main div figure {
-  text-align: center;
-}
-
-div.fruit_gallery {
+main div.cards {
   display: flex;
   flex-wrap: wrap;
 }
 
-div.fruit_gallery figure {
-  flex-basis: 47%;
-  /*If we change the padding to margin down below here then we need to make the flex basis 98%*/
-  margin: 1rem 2%;
-  /*Might need to change the padding from main to here and have it as margin: 1rem 2%*/
-}
-
-div.fruit_gallery figure img {
+main div a {
+  display: block;
   width: 100%;
+  height: 413px;
+  text-decoration: none;
+  padding: 0 2%;
+  transition: all 0.5s ease-in;
+  color: white;
+  text-align: center;
 }
 
-div figure.banana {
-  margin-left: 0;
-  margin-top: 0;
+main div i {
+  font-size: 48px;
+  padding-top: 20px;
 }
 
-div figure.kiwi {
-  margin-left: 0;
+div#card1 {
+  background-image: url("../images/cardimg_448/card1.webp");
 }
 
-div figure.pear {
-  margin-left: 0;
+div#card2 {
+  background-image: url("../images/cardimg_448/card2.webp");
 }
 
-div figure.strawberry {
-  margin-left: 0;
+div#card3 {
+  background-image: url("../images/cardimg_448/card3.webp");
 }
 
-div figure.apple {
-  margin-top: 0;
+div#card4 {
+  background-image: url("../images/cardimg_448/card4.webp");
 }
 
+div#card1 a {
+  background-color: rgb(192, 192, 33);
+}
+
+div#card2 a {
+  background-color: #bc191a;
+}
+
+div#card3 a {
+  background-color: rgb(192, 192, 33);
+}
+
+div#card4 a {
+  background-color: #bc191a;
+}
+
+div#card1 a:hover {
+  background: none;
+  text-shadow: 0 0 4px orange;
+}
+
+div#card2 a:hover {
+  background: none;
+  text-shadow: 0 0 4px orange;
+}
+
+div#card3 a:hover {
+  background: none;
+  text-shadow: 0 0 4px orange;
+}
+
+div#card4 a:hover {
+  background: none;
+  text-shadow: 0 0 4px orange;
+}
+
+/*end of cards*/
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #E81D02;
-  padding: 0.5rem 2%;
+  padding: 0.5rem 0;
   text-align: center;
+  color: black;
+  font-family: Roboto;
+  background-color: #bc191a;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -486,113 +507,201 @@ footer {
   clear: both;
 }
 
-@media only screen and (min-width: 35rem) {
+/*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
+@media only screen and (max-width: 27.9375rem) {
+  nav {
+    background-color: #bc191a;
+  }
+
+  /* Navigation Button  -------------------------------------------------------- */
+  nav button {
+    width: 100%;
+    padding: 0.4rem 2vw;
+    text-align: left;
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #FFF;
+    cursor: pointer;
+  }
+
+  /* Navigation Bar -------------------------------------------------------- */
+  #primaryNav {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 998;
+    font-weight: 500;
+  }
+
+  #primaryNav li.active a {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  #primaryNav li a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 2vw;
+    font-size: 14px;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  #primaryNav li a:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+
+  /* Toggle the navigation bar to expand down  */
+  #primaryNav.open {
+    height: auto;
+  }
+
+  /* Submenus – optional .parent class indicates dropdowns */
+  #primaryNav > li:hover > a {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #primaryNav li.parent > a:after {
+    font-size: 0.75rem;
+    content: "▼";
+    color: white;
+    float: right;
+  }
+
+  #primaryNav li.parent > a:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  /*hide the sub menu items by default*/
+  #primaryNav li ul {
+    display: none;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0;
+  }
+
+  #primaryNav li ul a {
+    border-top: solid 1px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    padding: 10px 5%;
+    font-weight: 500;
+  }
+
+  #primaryNav li:hover ul {
+    display: block;
+  }
+}
+/* End Mobile Styles */
+@media only screen and (min-width: 28rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
-  /* header h1 {font-size: 1.6rem; margin-top: 3rem;}
-  header h2 {font-size: 1.3rem;} */
+  div#headerWrapper {
+    background-image: url(../images/heroimg_med.webp);
+  }
+
   /*----------- NAVIGATION --------------*/
+  ul#primaryNav {
+    margin: 0;
+    padding-left: 0;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav {
+    background-color: #bc191a;
+  }
+
   nav ul {
-    margin-left: 2%;
-    margin-right: 2%;
     display: flex;
-    justify-content: flex-end;
+    margin-left: 2%;
+    border-left: 1px solid #a51617;
   }
 
   nav ul li {
-    width: auto;
-  }
-
-  nav ul li:first-child a {
-    border-right: 1px solid white;
-  }
-
-  nav ul li.active {
-    border-right: 1px solid white;
-  }
-
-  nav ul li:last-child a {
-    border-left: 1px solid white;
+    border-right: 1px solid #a51617;
+    list-style-type: none;
   }
 
   nav ul li a {
-    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 0.8rem;
+    padding: 0.9rem 1.2rem;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s linear;
+  }
+
+  nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #primaryNav li.parent > a:after {
+    content: "▼";
+    font-size: 0.65rem;
+    color: white;
+    float: left;
+  }
+
+  ul li ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #a51617;
+    border: none;
+    width: 14rem;
+    margin-left: 0;
+    padding-left: 0;
+    position: absolute;
+    left: -999rem;
+    z-index: 99;
+  }
+
+  ul li ul li {
+    border-right: none;
+    border-top: solid 1px #8f1314;
+  }
+
+  ul li:hover ul {
+    left: auto;
+    margin-left: 0;
+  }
+
+  li.active a {
+    background-color: #350707;
   }
 
   /*----------- MAIN --------------*/
-  div.fruit_gallery figure {
-    flex-basis: 30.66%;
-  }
-
-  div figure.banana {
-    margin-left: 0;
-  }
-
-  div figure.kiwi {
-    margin-left: 2%;
-  }
-
-  div figure.pear {
-    margin-left: 0;
-  }
-
-  div figure.strawberry {
-    margin-left: 0;
-  }
-
-  div figure.orange {
-    margin-left: 0;
-  }
-
-  div figure.blueberry {
-    margin-left: 0;
-    margin-top: 0;
+  main div#card1, main div#card2, main div#card3, main div#card4 {
+    flex-basis: 46%;
   }
 
   /*----------- FOOTER --------------*/
 }
 /* end of media query */
-@media only screen and (min-width: 64rem) {
-  header, nav, main, footer {
-    max-width: 71.25rem;
+@media only screen and (min-width: 48rem) {
+  main, footer, nav, header, #headerWrapper {
+    max-width: 64rem;
     margin: auto;
   }
 
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  div#headerWrapper {
+    background-image: url(../images/heroimg_large.webp);
+  }
+
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
-  div.fruit_gallery figure {
-    flex-basis: 22.5%;
+  main div#card1, main div#card2, main div#card3, main div#card4 {
+    flex-basis: 21%;
   }
 
-  div figure.banana {
-    margin-left: 0;
-  }
-
-  div figure.kiwi {
-    margin-left: 0;
-    margin-top: 0;
-  }
-
-  div figure.pear {
-    margin-left: 0;
-  }
-
-  div figure.strawberry {
-    margin-left: 0;
-  }
-
-  div figure.orange {
-    margin-left: 2%;
-  }
-
-  div figure.blueberry {
-    margin-left: 0;
-  }
-
-  div figure.pineapple {
-    margin-left: 0;
+  nav ul li a {
+    font-size: 0.8rem;
+    padding: 0.5rem 1.2rem;
   }
 
   /*----------- FOOTER --------------*/

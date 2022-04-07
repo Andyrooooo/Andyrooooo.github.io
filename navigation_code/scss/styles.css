@@ -23,56 +23,68 @@ time, mark, audio, video {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 nav ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none; }
+  content: "";
+  content: none;
+}
 
 a {
   margin: 0;
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 /* change colours to suit your needs */
 ins {
   background-color: #ff9;
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /* change colours to suit your needs */
 mark {
   background-color: #ff9;
   color: #000;
   font-style: italic;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 del {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+}
 
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
-  cursor: help; }
+  cursor: help;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /* change border colour to suit your needs */
 hr {
@@ -81,101 +93,121 @@ hr {
   border: 0;
   border-top: 1px solid #cccccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 input, select {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+}
 
 /*  apply a natural box layout model to all elements  */
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* BODY  */
 body {
   font-family: "Spline Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  min-width: 320px; }
+  min-width: 320px;
+}
 
 /* HEADER  */
 header {
   display: grid;
   grid-template-columns: 51px auto;
   align-items: center;
-  padding: .5rem 2vw; }
-  header h1 {
-    font-size: 1.6rem;
-    font-weight: 300;
-    padding-left: .5rem;
-    color: #cc7a26; }
+  padding: 0.5rem 2vw;
+}
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding-left: 0.5rem;
+  color: #cc7a26;
+}
 
 /* NAVIGATION STUFF GOES HERE  */
 nav {
-  /* the lighten here will lighten the color that is produced by the color*/ }
-  nav ul li a {
-    color: #333;
-    text-decoration: none;
-    display: block;
-    padding: 1rem 2vw;
-    border-top: solid 1px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    /*this row changed the text in the navigation to be on the right side and then later changed to center*/ }
-  nav ul li a:hover {
-    background-color: #eee; }
-  nav ul li.active a {
-    background-color: #f5dfc9; }
+  /* the lighten here will lighten the color that is produced by the color*/
+}
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 1rem 2vw;
+  border-top: solid 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  /*this row changed the text in the navigation to be on the right side and then later changed to center*/
+}
+nav ul li a:hover {
+  background-color: #eee;
+}
+nav ul li.active a {
+  background-color: #f5dfc9;
+}
 
 /* MAIN  */
 main p {
-  padding: .5rem 2vw;
+  padding: 0.5rem 2vw;
   color: #333;
-  line-height: 125%; }
+  line-height: 125%;
+}
 main h1 {
-  padding: 1rem 2vw .5rem 2vw;
+  padding: 1rem 2vw 0.5rem 2vw;
   font-size: 1.5rem;
   color: #265b7d;
-  font-weight: 300; }
+  font-weight: 300;
+}
 main .hero {
-  width: 100%; }
+  width: 100%;
+}
 main .hero img {
   width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 /* FOOTER  */
 #footerWrapper {
-  background-color: #1b1b1b; }
+  background-color: #1b1b1b;
+}
 
 footer {
-  font-size: .85rem;
+  font-size: 0.85rem;
   padding: 1rem 0;
   color: #bbb;
-  text-align: center; }
-  footer a {
-    color: #eee; }
+  text-align: center;
+}
+footer a {
+  color: #eee;
+}
 
 @media only screen and (min-width: 35rem) {
   /* NAVIGATION STUFF GOES HERE  */
   nav ul {
     display: flex;
     justify-content: space-between;
-    /*this is where the content was moved to the right for large and medium screens*/ }
+    /*this is where the content was moved to the right for large and medium screens*/
+  }
   nav ul li a {
-    border: none; } }
+    border: none;
+  }
+}
 @media only screen and (min-width: 64rem) {
   header, nav, main {
     max-width: 1240px;
-    margin: auto; }
+    margin: auto;
+  }
 
   /* NAVIGATION STUFF GOES HERE  */
   nav ul li a {
-    padding: .6rem 2rem;
-    font-size: .7rem; } }
-
-/*# sourceMappingURL=styles.css.map */
+    padding: 0.6rem 2rem;
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
