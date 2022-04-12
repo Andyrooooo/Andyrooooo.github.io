@@ -1,0 +1,147 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: $primaryColor;
+}
+header h1 {margin: 0;}
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    position: fixed; 
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    justify-content: center;
+
+ ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+ ul li {
+    flex-basis: 33.3%;
+}
+ ul li a {
+    display: block;
+    background-color: lighten($primaryColor, 5%);
+    color: #eee;
+    border-left: 1px solid darken($primaryColor, 10%);
+    padding: .8rem;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ ul li a span {
+    display: block;
+    padding-top: .3rem;
+}
+
+ ul li i {
+    font-size: 2.5rem;
+}
+
+ ul li:first-child a {border-left: none;}
+
+ ul li a:hover {
+    background-color: lighten($primaryColor, 15%);
+    color: #333;
+}
+
+ ul li.active a {
+    background-color: darken($primaryColor, 20%);
+    color: #fff;
+}
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    margin-bottom: 7rem; 
+    min-height: 10rem;
+}
+main div section {
+    background-color: $primaryColor;
+    padding-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+main div section figure {
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+main div section figure img { 
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    border-radius: 10px;
+}
+
+main div section figure figcaption {
+    position: absolute; 
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .7);
+    width: 95%;
+    padding: .5rem 1vw;
+    right: 2.5%;
+    left: 2.5%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.5rem;
+}
+
+main div#allcards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main div section div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main div section div span i {
+    float: left;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-left: .7rem;
+    padding-right: .5rem;
+}
+
+main div section div span p {
+    padding-left: 2rem;
+    font-size: .8rem;
+}
+/*----------- FOOTER --------------*/
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
