@@ -41,8 +41,8 @@ nav {
 }
  ul li a {
     display: block;
-    background-color: lighten($primaryColor, 5%);
-    color: #eee;
+    background-color: lighten($primaryColor, 25%);
+    color: #333;
     border-left: 1px solid darken($primaryColor, 10%);
     padding: .8rem;
     text-decoration: none;
@@ -63,12 +63,12 @@ nav {
  ul li:first-child a {border-left: none;}
 
  ul li a:hover {
-    background-color: lighten($primaryColor, 15%);
+    background-color: lighten($primaryColor, 10%);
     color: #333;
 }
 
  ul li.active a {
-    background-color: darken($primaryColor, 20%);
+    background-color: darken($primaryColor, 25%);
     color: #fff;
 }
 }

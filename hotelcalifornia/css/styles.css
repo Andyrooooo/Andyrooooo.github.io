@@ -322,7 +322,7 @@ body {
 /*----------- HEADER --------------*/
 header {
   padding: .5rem 2%;
-  background-color: #e59500; }
+  background-color: #ee703a; }
 
 header h1 {
   margin: 0; }
@@ -345,9 +345,9 @@ nav {
     flex-basis: 33.3%; }
   nav ul li a {
     display: block;
-    background-color: #ffa600;
-    color: #eee;
-    border-left: 1px solid #b27400;
+    background-color: #f8c5af;
+    color: #333;
+    border-left: 1px solid #e25113;
     padding: .8rem;
     text-decoration: none;
     font-size: 1rem;
@@ -361,10 +361,10 @@ nav {
   nav ul li:first-child a {
     border-left: none; }
   nav ul li a:hover {
-    background-color: #ffb833;
+    background-color: #f29269;
     color: #333; }
   nav ul li.active a {
-    background-color: #7f5300;
+    background-color: #9b380d;
     color: #fff; }
 
 /*----------- MAIN --------------*/
@@ -374,7 +374,7 @@ main {
   min-height: 10rem; }
 
 main div section {
-  background-color: #e59500;
+  background-color: #ee703a;
   padding-top: .5rem;
   margin-bottom: 1rem; }
 
