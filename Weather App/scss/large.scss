@@ -1,0 +1,18 @@
+/*body*/
+header, main {
+    max-width: 64rem;
+    margin:auto;
+}
+
+
+
+
+
+
+
+
+
+/* main section*/
+main section#cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}

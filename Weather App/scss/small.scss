@@ -1,0 +1,77 @@
+
+
+/*body*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+body#bodyWrapper {
+    background-color: $mainColor;
+}
+
+
+
+/*----------- HEADER --------------*/
+header {
+    text-align: center;
+    h1 {
+        color: $whiteColor; 
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    h2 {
+        margin-top: 0;
+        font-weight: 300;
+        color: $whiteColor;
+    }
+}
+
+
+
+
+/* main content*/
+
+main h1 {
+    text-align: center;
+    color: $whiteColor;
+    font-weight: 500;
+    padding-top: 2rem;
+}
+
+main section#cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+main section#cards div {
+    background-color: #08100e;
+    margin: .5rem 4%;
+    text-align: center;
+    display: block;
+    padding-bottom: .8rem;
+    color: $whiteColor;
+}
+
+main section#cards div p {
+    font-size: 2rem;
+}
+
+main section#cards div span {
+    background-color: $secondaryColor;
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: $whiteColor;
+}
+
+main section#cards div img {
+    display: block;
+    background-color: $secondaryColor;
+    padding: .3rem 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
