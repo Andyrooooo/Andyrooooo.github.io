@@ -1,0 +1,268 @@
+/*-------------------------body----------------------*/
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+/*-------------------------header----------------------*/
+
+
+header img {
+    float: left;
+    margin-right: 5px;
+}
+
+header h1 {
+    color: #0480B1;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    margin-bottom: 0;
+    padding-top: .6rem;
+}
+
+header h2 {
+    color: $smalldetail; 
+    font-weight: 300;
+    margin-top: 0;
+    letter-spacing: 22px;
+    font-size: 2rem;
+    border-bottom: solid 1px $smalldetail;
+}
+
+/*-------------------------navigation----------------------*/
+ 
+    
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 135px;
+}
+
+nav ul li a {
+    display: block;
+    color: $smalldetail;
+    padding: 10px 1rem;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: $primarysize;
+}
+
+nav ul li:first-child {border-bottom: solid 1px $smalldetail;}
+nav ul li:nth-child(2) {border-bottom: solid 1px $smalldetail;}
+
+
+nav ul li a:hover {
+    color: black;
+    font-family: Roboto;
+    font-weight: $primarysize;
+}
+ 
+
+/*------------------------------main-------------------------------*/
+
+
+
+main img {
+    width: 100%;
+    margin-top: 5.5rem;
+}
+
+/*-----------------Main section1----------------*/
+
+main div#firstsectionwrapper {
+    background-color: black;
+}
+
+main section.expectformula {
+    display: grid;
+    grid-template-columns: 55% auto;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+main section div#expect {
+    h1 {font-size: 1.3rem; color: lighten(yellow, 20%);}
+    p {color: $whitey; font-size: 14px;}
+    ul li {color: $whitey; font-size: 14px;}
+    padding: 0 $gutter;
+    
+}
+main section div#ourformula {
+    text-align: right;
+    padding: 0 $gutter;
+    ul {list-style-type: none; li {color: $whitey; font-size: 14px;}}
+    h1 {font-size: 1.3rem; color: lighten(yellow, 20%);}
+}
+
+
+/*-----------------Main section 2----------------*/
+
+main section.aboutuscards {
+    padding-right: $gutter;
+    padding-left: $gutter;
+    background-color: $mainbackgroundcolor;
+    border-top: 1px solid $smalldetail; 
+    border-bottom: 1px solid $smalldetail;
+    margin-bottom: -2rem;
+}
+main section div.cards {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+main h1.more {
+    padding-left: $gutter;
+    font-weight: $primarysize;
+    color:$primarycolor;
+    margin-bottom: 0;
+}
+
+main section div.cards div {
+    flex-basis: 100%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+}
+
+main section div.cards div img {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+main section div.cards div h2 {
+    font-weight: $primarysize;
+    font-size: 1.8rem;
+    color:$primarycolor;
+    margin-bottom: .2rem;
+    margin-top: .5rem;
+}
+
+main section div.cards div p {
+    margin-top: 0;
+}
+
+/*-----------------Main section  3----------------*/
+
+main section div#infocards {
+    display: grid;
+    padding: 1rem $gutter;
+    margin-top: 2rem;
+    background-color: $mainbackgroundcolor;
+    grid-template-areas:
+    "infrastructure"
+    "technology"
+    "support"
+    "pricing";
+}
+main section div#card1 {
+    grid-area: infrastructure;
+    img {margin-top: 1rem;}
+    h2 {
+        font-weight: $primarysize;
+        font-size: 1.8rem;
+        color:$primarycolor;
+        margin-bottom: .2rem;
+        margin-top: .5rem;
+    }
+    p {margin-top: 0;}
+}
+main section div#card2 {
+    grid-area: technology;
+    img {margin-top: 1rem;}
+    h2 {
+        font-weight: $primarysize;
+        font-size: 1.8rem;
+        color:$primarycolor;
+        margin-bottom: .2rem;
+        margin-top: .5rem;
+    }
+    p {margin-top: 0;}
+}
+main section div#card3 {
+    grid-area: support;
+    margin-top: 1rem;
+    h2 {
+        font-weight: $primarysize;
+        font-size: 1.8rem;
+        color:$primarycolor;
+        margin-bottom: .2rem;
+        margin-top: .5rem;
+    }
+    p {margin-top: 0;}
+}
+main section div#card4 {
+    grid-area: pricing;
+    text-align: center;
+    background-color: $whitey;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    a {
+        width: 12rem;
+        display: block;
+        padding: .3rem 10px;
+        margin: 1rem auto 0 auto;
+        border-radius: 15px;
+        text-align: center;
+        background-color:$primarycolor;
+        color: $whitey;
+        font-size: 1.2rem;
+        font-weight: $primarysize;
+        text-decoration: none;
+    }
+}
+main section div#card4 a:hover {
+    background-color: lighten($primarycolor, 10%);
+}
+
+
+
+
+
+
+/*-----------------Main section 4----------------*/
+
+main section.logoflow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 $gutter;
+    background-color: $whitey;
+}
+main section.logoflow div {
+    flex-basis: 50%;
+}
+
+main section.logoflow div img {
+    width: 100%;
+}
+/*------------------------------Footer-------------------------------*/
+footer {
+    background: -webkit-linear-gradient(rgba(4,128,177,0.4), #0480B1, $primarycolor);
+}
+
+footer p {
+    padding: 15px 0;
+    color: $whitey;
+    padding-left: $gutter;
+}
+
+footer p a {
+    color: $whitey;
+    text-decoration: none;
+}
+
+/*------------------------------clearfix-------------------------------*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

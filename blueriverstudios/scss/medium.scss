@@ -1,0 +1,85 @@
+
+
+
+
+
+
+
+/*------------------------------------navigation-----------------------*/
+nav ul {
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+nav ul li:first-child {border-bottom: none;}
+nav ul li:nth-child(2) {border-bottom: none;}
+
+
+
+
+
+/*------------------------------------main-----------------------*/
+main img {
+    margin-top: .5rem;
+}
+
+
+//main first section
+main section.expectformula {
+    grid-template-columns: 65% auto;
+}
+
+main section div#expect {
+    h1 {font-size: 1.5rem; color: lighten(yellow, 20%);}
+    p {color: white; font-size: 16px;}
+    ul li {color: white; font-size: 16px;}
+
+    
+}
+main section div#ourformula {
+    ul {list-style-type: none; li {color: white; font-size: 16px;}}
+    h1 {font-size: 1.5rem; color: lighten(yellow, 20%);}
+}
+
+
+//main second section
+main section div.cards div {
+    flex-basis: 47.89%;
+}
+
+
+
+//main third section
+
+main section div#infocards {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 49% 49%;
+    grid-template-areas:
+    "infrastructure technology"
+    "support pricing";
+}
+
+main section div#card1 {
+    grid-area: infrastructure;
+
+}
+main section div#card2 {
+    grid-area: technology;
+}
+
+main section div#card3 {
+    grid-area: support;
+}
+
+main section div#card4 {
+    grid-area: pricing;
+}
+
+
+
+/*____------------------------Fourth Section------------*/
+main section.logoflow div {
+    flex-basis: 33.33%;
+}

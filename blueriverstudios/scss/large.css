@@ -1,0 +1,29 @@
+/*---------------body-------------*/
+nav, header, footer, main, nav ul {
+  max-width: 75rem;
+  margin: auto; }
+
+/*-----------------Main section 1----------------*/
+main section.expectformula {
+  grid-template-columns: 80% auto;
+  margin-top: 1rem; }
+
+main section div.cards div {
+  flex-basis: 22.8%; }
+
+main section div.cards div img {
+  width: 100%; }
+
+/*----------main section 3---------------*/
+main section div#infocards {
+  grid-template-columns: 32% 32% 32%;
+  grid-template-areas: "infrastructure technology pricing" "support support pricing"; }
+
+main section.seemore {
+  padding-bottom: 1rem; }
+
+/*----------main section 4---------------*/
+main section.logoflow div {
+  flex-basis: 16.66%; }
+
+/*# sourceMappingURL=large.css.map */
