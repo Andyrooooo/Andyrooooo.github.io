@@ -339,7 +339,7 @@ nav ul {
 
 nav ul li a {
   display: block;
-  color: #686868;
+  color: #035c7f;
   padding: 10px 1rem;
   text-decoration: none;
   font-size: .9rem;
@@ -354,7 +354,7 @@ nav ul li:nth-child(2) {
   border-bottom: solid 1px grey; }
 
 nav ul li a:hover {
-  color: black;
+  color: #21bdfa;
   font-family: Roboto;
   font-weight: 500; }
 
@@ -501,7 +501,7 @@ main section div#card4 {
     text-decoration: none; }
 
 main section div#card4 a:hover {
-  background-color: #0480b1; }
+  background-color: #21bdfa; }
 
 /*-----------------Main section 4----------------*/
 main section.logoflow {

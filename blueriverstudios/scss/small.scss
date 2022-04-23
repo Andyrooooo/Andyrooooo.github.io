@@ -48,7 +48,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: rgb(104, 104, 104);
+    color: $primarycolor;
     padding: 10px 1rem;
     text-decoration: none;
     font-size: .9rem;
@@ -62,7 +62,7 @@ nav ul li:nth-child(2) {border-bottom: solid 1px $smalldetail;}
 
 
 nav ul li a:hover {
-    color: black;
+    color: lighten($primarycolor, 30%);
     font-family: Roboto;
     font-weight: $primarysize;
 }
@@ -221,7 +221,7 @@ main section div#card4 {
     }
 }
 main section div#card4 a:hover {
-    background-color: lighten($primarycolor, 10%);
+    background-color: lighten($primarycolor, 30%);
 }
 
 
