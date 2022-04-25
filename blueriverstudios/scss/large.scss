@@ -12,10 +12,14 @@ nav, header, footer, main, nav ul {
 main section.expectformula {
     grid-template-columns: 80% auto;
     margin-top: 1rem;
+    align-content: center;
 }
 
+
+
+/*-----------------Main section 2----------------*/
 main section div.cards div {
-    flex-basis: 22.8%;
+    flex-basis: 23.4%;
 }
 
 main section div.cards div img {

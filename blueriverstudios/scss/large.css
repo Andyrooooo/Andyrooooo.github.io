@@ -6,10 +6,12 @@ nav, header, footer, main, nav ul {
 /*-----------------Main section 1----------------*/
 main section.expectformula {
   grid-template-columns: 80% auto;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  align-content: center; }
 
+/*-----------------Main section 2----------------*/
 main section div.cards div {
-  flex-basis: 22.8%; }
+  flex-basis: 23.4%; }
 
 main section div.cards div img {
   width: 100%; }

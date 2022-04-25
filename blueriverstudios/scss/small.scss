@@ -88,18 +88,19 @@ main section.expectformula {
     grid-template-columns: 55% auto;
     margin-top: 1rem;
     padding-bottom: 1.5rem;
+    padding-left: $gutter;
+    padding-right: $gutter;
 }
 
 main section div#expect {
     h1 {font-size: 1.3rem; color: lighten(yellow, 20%);}
     p {color: $whitey; font-size: 14px;}
     ul li {color: $whitey; font-size: 14px;}
-    padding: 0 $gutter;
-    
+    padding-right: $gutter;
 }
+
 main section div#ourformula {
     text-align: right;
-    padding: 0 $gutter;
     ul {list-style-type: none; li {color: $whitey; font-size: 14px;}}
     h1 {font-size: 1.3rem; color: lighten(yellow, 20%);}
 }
@@ -108,17 +109,17 @@ main section div#ourformula {
 /*-----------------Main section 2----------------*/
 
 main section.aboutuscards {
-    padding-right: $gutter;
-    padding-left: $gutter;
     background-color: $mainbackgroundcolor;
     border-top: 1px solid $smalldetail; 
     border-bottom: 1px solid $smalldetail;
     margin-bottom: -2rem;
+    padding-right: $gutter;
+    padding-left: $gutter;
 }
 main section div.cards {
     display: flex;
     flex-wrap: wrap;
-
+    column-gap: $gutter;
 }
 
 main h1.more {
@@ -130,8 +131,6 @@ main h1.more {
 
 main section div.cards div {
     flex-basis: 100%;
-    padding-right: $gutter;
-    padding-left: $gutter;
 }
 
 main section div.cards div img {

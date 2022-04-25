@@ -371,10 +371,12 @@ main section.expectformula {
   display: grid;
   grid-template-columns: 55% auto;
   margin-top: 1rem;
-  padding-bottom: 1.5rem; }
+  padding-bottom: 1.5rem;
+  padding-left: 2%;
+  padding-right: 2%; }
 
 main section div#expect {
-  padding: 0 1vw; }
+  padding-right: 2%; }
   main section div#expect h1 {
     font-size: 1.3rem;
     color: #ffff66; }
@@ -386,8 +388,7 @@ main section div#expect {
     font-size: 14px; }
 
 main section div#ourformula {
-  text-align: right;
-  padding: 0 1vw; }
+  text-align: right; }
   main section div#ourformula ul {
     list-style-type: none; }
     main section div#ourformula ul li {
@@ -399,27 +400,26 @@ main section div#ourformula {
 
 /*-----------------Main section 2----------------*/
 main section.aboutuscards {
-  padding-right: 1vw;
-  padding-left: 1vw;
   background-color: #e1e1e1;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
-  margin-bottom: -2rem; }
+  margin-bottom: -2rem;
+  padding-right: 2%;
+  padding-left: 2%; }
 
 main section div.cards {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  column-gap: 2%; }
 
 main h1.more {
-  padding-left: 1vw;
+  padding-left: 2%;
   font-weight: 500;
   color: #035c7f;
   margin-bottom: 0; }
 
 main section div.cards div {
-  flex-basis: 100%;
-  padding-right: 1vw;
-  padding-left: 1vw; }
+  flex-basis: 100%; }
 
 main section div.cards div img {
   width: 100%;
@@ -438,7 +438,7 @@ main section div.cards div p {
 /*-----------------Main section  3----------------*/
 main section div#infocards {
   display: grid;
-  padding: 1rem 1vw;
+  padding: 1rem 2%;
   margin-top: 2rem;
   background-color: #e1e1e1;
   grid-template-areas: "infrastructure" "technology" "support" "pricing"; }
@@ -507,7 +507,7 @@ main section div#card4 a:hover {
 main section.logoflow {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 1vw;
+  padding: 0 2%;
   background-color: white; }
 
 main section.logoflow div {
@@ -523,7 +523,7 @@ footer {
 footer p {
   padding: 15px 0;
   color: white;
-  padding-left: 1vw; }
+  padding-left: 2%; }
 
 footer p a {
   color: white;
@@ -575,7 +575,7 @@ footer p a {
     color: #ffff66; }
 
   main section div.cards div {
-    flex-basis: 47.89%; }
+    flex-basis: 49%; }
 
   main section div#infocards {
     display: grid;
@@ -608,10 +608,12 @@ footer p a {
   /*-----------------Main section 1----------------*/
   main section.expectformula {
     grid-template-columns: 80% auto;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    align-content: center; }
 
+  /*-----------------Main section 2----------------*/
   main section div.cards div {
-    flex-basis: 22.8%; }
+    flex-basis: 23.4%; }
 
   main section div.cards div img {
     width: 100%; }
