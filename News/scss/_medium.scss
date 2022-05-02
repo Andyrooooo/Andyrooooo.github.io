@@ -8,44 +8,96 @@
 /*----------- HEADER --------------*/
 
 /*----------- NAVIGATION --------------*/
+ul#primaryNav {margin: 0; padding: 0;}
 nav button {display: none;}
-
-#primaryNav {display: flex;}
+nav {
+    padding: 1.1rem 0;
+}
 
 nav ul {
-    margin-left: 2%;
+    padding: 1rem .3rem;
+    display: grid;
+    grid-template-columns: 5rem 5.4rem 7.2rem 4rem;
 }
-nav ul li a {
-    font-size: 1.2rem;
-    padding: .8rem 1rem;
-}
-/*border for medium*/
-nav ul li:first-child {border-right: 1px solid $blackColor;}
-nav ul li:nth-child(2) {border-right: 1px solid $blackColor;}
-nav ul li:nth-child(3) {border-right: 1px solid $blackColor;}
-nav ul li:nth-child(4) {border-right: 1px solid $blackColor;}
 
-/*remove small border*/
-nav ul li:first-child {border-bottom: none; border-top: none;}
-nav ul li:nth-child(2) {border-bottom: none;}
-nav ul li:nth-child(3) {border-bottom: none;}
-  
-    
+
+nav ul li { 
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: block;
+    font-size: .8rem;
+    padding: .9rem .5rem;
+    text-decoration: none;
+    transition: background 0.3s linear;
+    margin: 0 5px;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: rgba(0,0,0,.5)
+}
+
+#primaryNav li.parent > a:after {
+    content: "\25BC";
+    font-size: .65rem;
+    color: black;
+    float: right;
+    padding: 2px .5px;
+}
+
+ul li ul {
+    display: flex;
+    flex-direction: column;
+    background-color: darken($backgroundColor,5%);
+    border: none;
+    width: 17rem;
+    margin-left: 0;
+    padding-left: 0;
+    position: absolute;
+    left: -999rem;
+    z-index: 99;
+    border-radius: 3px;
+    padding: 0;
+}
+ul li.homemenu ul li:nth-child(6) {
+    border-bottom: none;
+}
+ul li ul li {
+    border-right: none;
+}
+ul li ul li:nth-child(1) {
+    border-bottom: solid 1px darken($backgroundColor,20%);
+}
+ul li ul li:nth-child(2) {
+    border-bottom: solid 1px darken($backgroundColor,20%);
+}
+ul li ul li:nth-child(3) {
+    border-bottom: solid 1px darken($backgroundColor,20%);
+}
+ul li ul li:nth-child(4) {
+    border-bottom: solid 1px darken($backgroundColor,20%);
+}
+ul li ul li:nth-child(5) {
+    border-bottom: solid 1px darken($backgroundColor,20%);
+}
+ul li ul li:nth-child(6) {
+    border-bottom: solid 1px darken($backgroundColor,20%);
+}
+
+ul li:hover ul {
+    left: auto;
+    margin-left: 0;
+}
+li.active a {background-color: darken($backgroundColor,30%);}
 
 
 /*----------- MAIN --------------*/
-
-main div.newsgrid {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-main span {
-    font-size: 1rem;
-} 
-
-.mainstory {grid-column: 1 / span 3;}
+main div.cards div {flex-basis: 32%;}
 /*----------- FOOTER --------------*/
     
-footer div.footernav {
+footer {
     grid-template-columns: 1fr 1fr;
+    img {width: 50%;}
 }

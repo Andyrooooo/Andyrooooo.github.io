@@ -1,0 +1,35 @@
+main, footer, nav, header, #headerWrapper {
+        max-width: 64rem;
+        margin: auto;
+}
+
+/*----------- BODY --------------*/
+
+/*----------- HEADER --------------*/
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+        padding: 1.5rem 0;
+}
+
+nav ul {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 6.5rem 7rem 9rem 5rem;
+    
+}
+nav ul li a {
+        font-size: .8rem;
+        padding: .5rem 1.2rem;
+}
+/*----------- MAIN --------------*/
+main section.blogcards div {
+        flex-basis: 24.1%;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+        img {width: 40%;}
+}
