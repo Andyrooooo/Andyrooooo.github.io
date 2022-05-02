@@ -334,61 +334,58 @@ header figure.logo {
 
 /*----------- NAVIGATION --------------*/
 /*----------- MAIN --------------*/
-main h1 {
-  text-align: center; }
-
-main h2 {
-  text-align: center;
-  font-size: 1.2rem; }
-
-/*slider*/
-main picture {
-  position: relative; }
-
+/*hero image*/
 main picture img {
-  display: block;
   width: 100%; }
 
-/*end of slider*/
-/*cards*/
-main div.cards div img {
-  width: 90%;
-  margin-right: 5%;
-  margin-left: 5%; }
-main div.cards div {
-  flex-basis: 100%;
-  margin: 1rem 0; }
-
-main div.cards {
+/*blog cards*/
+main section.blogcards {
   display: flex;
   flex-wrap: wrap;
   margin: 1rem 2%;
-  gap: 2%; }
+  gap: .5rem; }
 
-main div.cards div span {
-  display: block;
-  text-align: center;
-  background-color: white;
-  margin-top: .5rem;
-  padding: 8px 0;
-  margin-right: 10%;
-  margin-left: 10%;
-  border-radius: 5px; }
-  main div.cards div span a {
-    text-decoration: none;
-    font-size: 14px;
-    color: black; }
-
-main div.cards div span:hover {
-  background-color: #b3b3b3; }
-
-main div#card1, div#card2, div#card3, div#card4, div#card5, div#card6 {
+main section.blogcards div {
   background-color: #8c0a0a;
-  border-radius: 5px;
-  padding-top: .8rem;
-  padding-bottom: .8rem; }
+  flex-basis: 100%;
+  padding-top: .5rem; }
 
-/*end of cards*/
+main section.blogcards div img {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%; }
+
+main section.blogcards div h1 {
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: .3rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  color: white; }
+
+main section.blogcards div p {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-top: 0;
+  color: white; }
+
+/*Easter photo gallery*/
+main h1.imagegalleryheader {
+  border-bottom: 1px solid #cbcbcb;
+  margin-top: 3rem; }
+
+section.imagegallery figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 55%;
+  position: relative;
+  margin: 0; }
+
+section.imagegallery figure img {
+  width: 100%;
+  height: auto;
+  position: absolute; }
+
 /*----------- FOOTER --------------*/
 footer {
   padding: .5rem 2%;
@@ -589,8 +586,9 @@ footer {
     color: purple; }
 
   /*----------- MAIN --------------*/
-  main div.cards div {
-    flex-basis: 32%; }
+  main section.blogcards div {
+    flex-basis: 49%;
+    justify-content: center; }
 
   /*----------- FOOTER --------------*/
   footer {
@@ -619,11 +617,8 @@ footer {
     padding: .5rem 1.2rem; }
 
   /*----------- MAIN --------------*/
-  main div.cards {
-    justify-content: center; }
-
-  main div.cards div {
-    flex-basis: 23%; }
+  main section.blogcards div {
+    flex-basis: 24.1%; }
 
   /*----------- FOOTER --------------*/
   footer img {

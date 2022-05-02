@@ -28,29 +28,14 @@ float: right;
 /*----------- NAVIGATION --------------*/
 
 /*----------- MAIN --------------*/
-main h1 {
-    text-align: center;
-}
-main h2 {
-    text-align: center;
-    font-size: 1.2rem;
-}
-/*slider*/
-main picture {
-    position: relative;
-}
-main picture img {
-    display: block;
-    width: 100%;
-}
-/*end of slider*/
-
-/*cards*/
+main picture img {width: 100%;}
 main {
-    div.cards div img {width: 90%; margin-right: 5%; margin-left: 5%;}
+
+    h1 {text-align: center;}
     div.cards div {
         flex-basis: 100%;
         margin: 1rem 0;
+        text-align: center;
     }
 }
 main div.cards {
@@ -58,6 +43,11 @@ main div.cards {
     flex-wrap: wrap;
     margin: 1rem 2%;
     gap: 2%;
+}
+main div.cards div i {
+    font-size: 3rem;
+    padding: 2rem 0 2rem 0;
+    color: white;
 }
 main div.cards div span {
     display: block;
@@ -77,12 +67,12 @@ main div.cards div span:hover {
     background-color: darken(white, 30%);
 }
 main div#card1, div#card2, div#card3, div#card4, div#card5, div#card6 {
-    background-color: rgb(140, 10, 10);
+    background-color: rgb(140, 10, 10);;
     border-radius: 5px;
     padding-top: .8rem;
     padding-bottom: .8rem;
 }
-/*end of cards*/
+
 
 /*----------- FOOTER --------------*/
 

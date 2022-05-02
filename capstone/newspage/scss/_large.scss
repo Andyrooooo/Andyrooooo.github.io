@@ -24,11 +24,12 @@ nav ul li a {
         padding: .5rem 1.2rem;
 }
 /*----------- MAIN --------------*/
-main div.cards {justify-content: center;}
-main div.cards div {flex-basis: 23%;}
+main section.blogcards div {
+        flex-basis: 24.1%;
+}
 
 
 /*----------- FOOTER --------------*/
 footer {
         img {width: 40%;}
-    }
+}

@@ -39,7 +39,6 @@ nav ul li a:hover {
     color: rgba(0,0,0,.5)
 }
 
-
 #primaryNav li.parent > a:after {
     content: "\25BC";
     font-size: .65rem;
@@ -94,8 +93,11 @@ ul li:hover ul {
 li.active a {color: purple;}
 
 
+
 /*----------- MAIN --------------*/
-main div.cards div {flex-basis: 32%;}
+
+
+
 /*----------- FOOTER --------------*/
     
 footer {

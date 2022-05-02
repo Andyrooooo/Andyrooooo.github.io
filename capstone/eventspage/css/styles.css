@@ -334,36 +334,26 @@ header figure.logo {
 
 /*----------- NAVIGATION --------------*/
 /*----------- MAIN --------------*/
-main h1 {
-  text-align: center; }
-
-main h2 {
-  text-align: center;
-  font-size: 1.2rem; }
-
-/*slider*/
-main picture {
-  position: relative; }
-
 main picture img {
-  display: block;
   width: 100%; }
 
-/*end of slider*/
-/*cards*/
-main div.cards div img {
-  width: 90%;
-  margin-right: 5%;
-  margin-left: 5%; }
+main h1 {
+  text-align: center; }
 main div.cards div {
   flex-basis: 100%;
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  text-align: center; }
 
 main div.cards {
   display: flex;
   flex-wrap: wrap;
   margin: 1rem 2%;
   gap: 2%; }
+
+main div.cards div i {
+  font-size: 3rem;
+  padding: 2rem 0 2rem 0;
+  color: white; }
 
 main div.cards div span {
   display: block;
@@ -388,7 +378,6 @@ main div#card1, div#card2, div#card3, div#card4, div#card5, div#card6 {
   padding-top: .8rem;
   padding-bottom: .8rem; }
 
-/*end of cards*/
 /*----------- FOOTER --------------*/
 footer {
   padding: .5rem 2%;
@@ -589,8 +578,11 @@ footer {
     color: purple; }
 
   /*----------- MAIN --------------*/
+  main div.cards {
+    justify-content: center; }
+
   main div.cards div {
-    flex-basis: 32%; }
+    flex-basis: 48%; }
 
   /*----------- FOOTER --------------*/
   footer {
@@ -619,11 +611,8 @@ footer {
     padding: .5rem 1.2rem; }
 
   /*----------- MAIN --------------*/
-  main div.cards {
-    justify-content: center; }
-
   main div.cards div {
-    flex-basis: 23%; }
+    flex-basis: 32%; }
 
   /*----------- FOOTER --------------*/
   footer img {

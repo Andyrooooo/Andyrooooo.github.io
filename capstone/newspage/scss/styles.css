@@ -368,7 +368,7 @@ main div.cards {
 main div.cards div span {
   display: block;
   text-align: center;
-  background-color: white;
+  background-color: orange;
   margin-top: .5rem;
   padding: 8px 0;
   margin-right: 10%;
@@ -376,14 +376,13 @@ main div.cards div span {
   border-radius: 5px; }
   main div.cards div span a {
     text-decoration: none;
-    font-size: 14px;
-    color: black; }
+    font-size: 14px; }
 
 main div.cards div span:hover {
-  background-color: #b3b3b3; }
+  background-color: #cc8400; }
 
 main div#card1, div#card2, div#card3, div#card4, div#card5, div#card6 {
-  background-color: #8c0a0a;
+  background-color: blue;
   border-radius: 5px;
   padding-top: .8rem;
   padding-bottom: .8rem; }
@@ -455,7 +454,7 @@ footer {
     font-weight: 500; }
 
   #primaryNav li.active a {
-    color: black; }
+    background-color: rgba(0, 0, 0, 0.75); }
 
   #primaryNav li a {
     display: block;
@@ -468,7 +467,7 @@ footer {
     border-top: 1px solid rgba(0, 0, 0, 0.2); }
 
   #primaryNav li a:hover {
-    color: white; }
+    color: rgba(0, 0, 0, 0.25); }
 
   /* Toggle the navigation bar to expand down  */
   #primaryNav.open {
@@ -476,7 +475,7 @@ footer {
 
   /* Submenus – optional .parent class indicates dropdowns */
   #primaryNav > li:hover > a {
-    background: purple; }
+    background: rgba(0, 0, 0, 0.5); }
 
   #primaryNav li.parent > a:after {
     font-size: .75rem;
@@ -485,7 +484,7 @@ footer {
     float: right; }
 
   #primaryNav li.parent > a:hover {
-    background: purple; }
+    background: rgba(0, 0, 0, 0.5); }
 
   /*hide the sub menu items by default*/
   #primaryNav li ul {
@@ -546,7 +545,7 @@ footer {
   ul li ul {
     display: flex;
     flex-direction: column;
-    background-color: #ededed;
+    background-color: #c1c1c1;
     border: none;
     width: 17rem;
     margin-left: 0;
@@ -586,7 +585,7 @@ footer {
     margin-left: 0; }
 
   li.active a {
-    color: purple; }
+    background-color: #828282; }
 
   /*----------- MAIN --------------*/
   main div.cards div {

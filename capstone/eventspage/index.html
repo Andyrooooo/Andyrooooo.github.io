@@ -5,7 +5,7 @@
 <meta name="description" content="Capstone Project">
 <meta name="author" content="Andrew Kester">
 
-<title>Highland City Arts Council: Home</title>
+<title>Highland City Arts Council: Events</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script src="https://kit.fontawesome.com/e5ff2f4c45.js" crossorigin="anonymous"></script>
+
 
 <!-- STYLE SHEETS -->
 <link href="css/styles.css" rel="stylesheet">
@@ -39,7 +40,7 @@
 
             <!-- NAVIGATION HERE -->
             <ul id="primaryNav">
-                <li class="active" class="parent homemenu"><a href="#">Home</a>
+                <li class="parent homemenu"><a href="..//index.html">Home</a>
                     <ul>
                         <li><a href="#">After School Arts Club</a></li>
                         <li><a href="#">Childrens Choir</a></li>
@@ -50,7 +51,7 @@
                     </ul>
                     </li>
     
-                 <li class="parent"><a href="eventspage/index.html">Events</a>
+                 <li class="active" class="parent"><a href="#">Events</a>
                     <ul>
                         <li><a href="#">Dress For Santa</a></li>
                         <li><a href="#">Highland City Fling</a></li>
@@ -62,9 +63,9 @@
                      </ul>
                 </li>
     
-                <li><a href="getinvolved/index.html">Get Involved</a>
+                <li><a href="..//getinvolved/index.html">Get Involved</a>
     
-                <li><a href="newspage/index.html">News</a>
+                <li><a href="..//newspage/index.html">News</a>
                  
             </ul>
         </nav>
@@ -75,75 +76,54 @@
 <!-- CONTENT HERE -->
 <div id="mainWrapper">
 <main>
-        <!--slider images-->
-        <div class="my_slider">
-
-            <picture>
-            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/imgslider_sml1.webp">
-            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/sliderimg_lrg1.webp">
-            <img src="images/sml_screen/boston1.webp" alt="Boston ruring christmas with snow">
-        </picture>
-        <picture>
-            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/imgslider_sml2.webp">
-            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/sliderimg_lrg2.webp">
-            <img src="images/sml_screen/boston2.webp" alt="Boston in the fall with the water reflecting the buildings">
-        </picture>
-        <picture>
-            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/imgslider_sml3.webp">
-            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/sliderimg_lrg3.webp">
-            <img src="images/sml_screen/boston3.webp" alt="Boston harbor and city lights">
-        </picture>
-        <picture>
-            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/imgslider_sml4.webp">
-            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/sliderimg_lrg4.webp">
-            <img src="images/sml_screen/boston4.webp" alt="Boston harbor at night">
-        </picture>
-        <picture>
-            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/imgslider_sml5.webp">
-            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/sliderimg_lrg5.webp">
-            <img src="images/sml_screen/boston5.webp" alt="Boston State House">
-        </picture>
-
-    </div><!--End of slider images-->
+    <picture class="eventsimg">
+    <source media="(max-width: 28rem)" srcset="images/smll_screen_447/eventsimg.webp">
+    <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/eventsimg.webp">
+    <img src="images/smll_screen_447/eventsimg.webp" alt="Show at the park">
+    </picture>
 
 
 
-        <h1>Arts Programs Offered</h1>
-        <h2>Come see our programs and join us!</h2>
-
+    <h1>Come check out our events!</h1>
 
 
         <div class="cards"> <!-- Beginning of cards-->
             <div id="card1">
-                <img src="images/cardimg_448/card1.webp" alt="Youth Theatre group taking a silly photo">
-                <span><a href="#">Youth Theatre</a></span>
+                <i class="fa-solid fa-sleigh"></i>
+                <span><a href="#">Dress For Santa</a></span>
             </div>
     
             <div id="card2">
-                <img src="images/cardimg_448/card2.webp" alt="Watercolor painting of a young girl">
-                <span><a href="#">Watercolor Classes</a></span>
+                <i class="fa-solid fa-brush"></i>
+                <span><a href="#">Highland Fling</a></span>
             </div>
 
             <div id="card3">
-                <img src="images/cardimg_448/card3.webp" alt="Timpanogos bell choir playing music">
-                <span><a href="#">Timp Ringer's Choir</a></span>
+                <i class="fa-solid fa-carrot"></i>
+                <span><a href="#">Easter</a></span>
             </div>
 
             <div id="card4">
-                <img src="images/cardimg_448/card4.webp" alt="Group photo of the Adult Choir">
-                <span><a href="#">Adult Choir</a></span>
+                <i class="fa-solid fa-guitar"></i>
+                <span><a href="#">Ukulele Festival</a></span>
             </div>
 
             <div id="card5">
-                <img src="images/cardimg_448/card5.webp" alt="Wall of framed art">
-                <span><a href="#">After School Arts</a></span>
+                <i class="fa-solid fa-skull"></i>
+                <span><a href="#">Halloween</a></span>
             </div>
 
             <div id="card6">
-                <img src="images/cardimg_448/card6.webp" alt="Child staring into the camera">
-                <span><a href="#">Childrens Choir</a></span>
+                <i class="fa-solid fa-gift"></i>
+                <span><a href="#">Christmas</a></span>
+            </div>
+
+            <div id="card6">
+                <i class="fa-solid fa-palette"></i>
+                <span><a href="#">Friends of the Arts</a></span>
             </div>
         </div><!-- End of cards-->
+
 </main>
 </div>    
 

@@ -5,7 +5,7 @@
 <meta name="description" content="Capstone Project">
 <meta name="author" content="Andrew Kester">
 
-<title>Highland City Arts Council: Home</title>
+<title>Highland City Arts Council: Get Involved</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script src="https://kit.fontawesome.com/e5ff2f4c45.js" crossorigin="anonymous"></script>
+
 
 <!-- STYLE SHEETS -->
 <link href="css/styles.css" rel="stylesheet">
@@ -39,7 +40,7 @@
 
             <!-- NAVIGATION HERE -->
             <ul id="primaryNav">
-                <li class="active" class="parent homemenu"><a href="#">Home</a>
+                <li class="parent homemenu"><a href="..//index.html">Home</a>
                     <ul>
                         <li><a href="#">After School Arts Club</a></li>
                         <li><a href="#">Childrens Choir</a></li>
@@ -50,7 +51,7 @@
                     </ul>
                     </li>
     
-                 <li class="parent"><a href="eventspage/index.html">Events</a>
+                 <li class="parent"><a href="..///eventspage/index.html">Events</a>
                     <ul>
                         <li><a href="#">Dress For Santa</a></li>
                         <li><a href="#">Highland City Fling</a></li>
@@ -62,9 +63,9 @@
                      </ul>
                 </li>
     
-                <li><a href="getinvolved/index.html">Get Involved</a>
+                <li class="active"><a href="#">Get Involved</a>
     
-                <li><a href="newspage/index.html">News</a>
+                <li><a href="..//newspage/index.html">News</a>
                  
             </ul>
         </nav>
@@ -75,75 +76,48 @@
 <!-- CONTENT HERE -->
 <div id="mainWrapper">
 <main>
-        <!--slider images-->
-        <div class="my_slider">
+    <picture class="eventsimg">
+        <source media="(max-width: 28rem)" srcset="images/smll_screen_447/involved.webp">
+        <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/involved.webp">
+        <img src="images/smll_screen_447/involved.webp" alt="Woman showcasing her art">
+    </picture>
 
-            <picture>
-            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/imgslider_sml1.webp">
-            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/sliderimg_lrg1.webp">
-            <img src="images/sml_screen/boston1.webp" alt="Boston ruring christmas with snow">
-        </picture>
-        <picture>
-            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/imgslider_sml2.webp">
-            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/sliderimg_lrg2.webp">
-            <img src="images/sml_screen/boston2.webp" alt="Boston in the fall with the water reflecting the buildings">
-        </picture>
-        <picture>
-            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/imgslider_sml3.webp">
-            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/sliderimg_lrg3.webp">
-            <img src="images/sml_screen/boston3.webp" alt="Boston harbor and city lights">
-        </picture>
-        <picture>
-            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/imgslider_sml4.webp">
-            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/sliderimg_lrg4.webp">
-            <img src="images/sml_screen/boston4.webp" alt="Boston harbor at night">
-        </picture>
-        <picture>
-            <source media="(max-width: 28rem)" srcset="images/smll_screen_447/imgslider_sml5.webp">
-            <source media="(min-width: 28rem)" srcset="images/lrg_med_screen/sliderimg_lrg5.webp">
-            <img src="images/sml_screen/boston5.webp" alt="Boston State House">
-        </picture>
+    <h1>Get Involved</h1>
 
-    </div><!--End of slider images-->
+<form method="get" action="thanks2.html" id="form1">
+    <fieldset>
+      <legend>Fill out here to volunteer</legend>
+        <label class="top">First Name* <input type="text" name="fname" required></label>
+        <label class="top">Last Name* <input type="text" name="lname" required></label>
+        <label class="top">Phone Number* <input type="text" name="phone" placeholder="1235551234" required></label>
+        <label class="top">Email <input type="text" name="email" placeholder="something@gmail.com"></label>
+        <label class="top">My Business Name <input type="text" name="bname"></label>
+        <label class="top">My Website Name <input type="url" name="url" placeholder="http://"></label>
+    </fieldset>
+    <input type="submit" value = "Submit Form" class="submitBtn">
+</form>
 
+<form>
+    <fieldset method="get" action="thanks2.html" id="form2">
+      <legend>Donate Here</legend>
+      <label class="top">Name on my Card* <input type="text" name="cardname" required></label>
+      <label class="top">Card Number* <input type="text" name="cardnmbr" required></label>
+      <label class="top">Expiration Date of My Card* <input type="date" name="carddate" required></label>
+      <label class="top">Choose amount of donation
+        <select name="coloroptions">
+          <option value="">Please Select &#9662;</option>
+          <option value="software1">$1</option>
+          <option value="software2">$5</option>
+          <option value="software3">$10</option>
+          <option value="software4">$20</option>
+          <option value="software5">$50</option>
+        </select>
+      </label>
+      <label class="top">Custom Amount <input type="number" name="itemquantity"></label>
+    </fieldset>
+    <input type="submit" value = "Submit Donation" class="submitBtn" formaction="thanks.html">
+   </form>
 
-
-        <h1>Arts Programs Offered</h1>
-        <h2>Come see our programs and join us!</h2>
-
-
-
-        <div class="cards"> <!-- Beginning of cards-->
-            <div id="card1">
-                <img src="images/cardimg_448/card1.webp" alt="Youth Theatre group taking a silly photo">
-                <span><a href="#">Youth Theatre</a></span>
-            </div>
-    
-            <div id="card2">
-                <img src="images/cardimg_448/card2.webp" alt="Watercolor painting of a young girl">
-                <span><a href="#">Watercolor Classes</a></span>
-            </div>
-
-            <div id="card3">
-                <img src="images/cardimg_448/card3.webp" alt="Timpanogos bell choir playing music">
-                <span><a href="#">Timp Ringer's Choir</a></span>
-            </div>
-
-            <div id="card4">
-                <img src="images/cardimg_448/card4.webp" alt="Group photo of the Adult Choir">
-                <span><a href="#">Adult Choir</a></span>
-            </div>
-
-            <div id="card5">
-                <img src="images/cardimg_448/card5.webp" alt="Wall of framed art">
-                <span><a href="#">After School Arts</a></span>
-            </div>
-
-            <div id="card6">
-                <img src="images/cardimg_448/card6.webp" alt="Child staring into the camera">
-                <span><a href="#">Childrens Choir</a></span>
-            </div>
-        </div><!-- End of cards-->
 </main>
 </div>    
 
